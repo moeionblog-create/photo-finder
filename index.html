@@ -114,13 +114,14 @@
         <button class="btn btn-ghost" id="refresh-file-btn" title="เลือกไฟล์ครั้งแรก ครั้งต่อไปกดปุ่มเดียวโหลดไฟล์เดิมซ้ำได้เลย (Chrome เท่านั้น)">รีเฟรชจากไฟล์เดิม</button>
         <button class="btn btn-ghost" id="import-btn">นำเข้า JSON</button>
         <button class="btn btn-ghost" id="export-btn">ส่งออก JSON</button>
+        <button class="btn btn-ghost" id="auth-btn">เข้าสู่ระบบผู้ดูแล</button>
         <button class="btn btn-primary" id="add-btn">+ เพิ่มสินค้า</button>
       </div>
       <input type="file" id="import-file-input" accept="application/json,.json" style="display:none" />
     </div>
     <div id="home-content"><div class="loading">กำลังโหลด...</div></div>
     <div class="storage-note" id="last-import-line">กำลังตรวจสอบข้อมูลไฟล์ล่าสุด...</div>
-    <div class="storage-note">รูปทั้งหมดเก็บไว้ในเครื่องนี้ (IndexedDB) รองรับพื้นที่ได้มากกว่าเดิมมาก — ใช้ "ส่งออก/นำเข้า JSON" หรือ "รีเฟรชจากไฟล์เดิม" เพื่อสำรอง/ย้ายข้อมูลได้ค่ะ</div>
+    <div class="storage-note">รูปและข้อมูลเก็บออนไลน์ ผู้ชมทุกเครื่องจะเห็นข้อมูลชุดเดียวกัน ผู้ดูแลเข้าสู่ระบบเพื่อเพิ่มหรือแก้ไขรูปค่ะ</div>
   </div>
 
   <div id="screen-detail">
@@ -144,8 +145,14 @@
 </div>
 <div id="toast" class="toast"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (function(){
+  const SUPABASE_URL = 'https://oxytouwiwxjsoyausshv.supabase.co';
+  const SUPABASE_KEY = 'sb_publishable_UaaPd0gBM52wNsLkJYkKDw_iORt0Nln';
+  const MEDIA_API = 'https://photo-finder-media.moeionblog.workers.dev';
+  const cloud = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  let session = null;
   const STORAGE_INDEX_KEY = 'pfv_product_index';
   const STORAGE_PRODUCT_PREFIX = 'pfv_product_'; // legacy localStorage prefix, migrated to IndexedDB
   const DB_NAME = 'pfvDB';
@@ -166,6 +173,7 @@
   const homeContent = document.getElementById('home-content');
   const searchInput = document.getElementById('search-input');
   const addBtn = document.getElementById('add-btn');
+  const authBtn = document.getElementById('auth-btn');
   const toastEl = document.getElementById('toast');
   const screenHome = document.getElementById('screen-home');
   const screenDetail = document.getElementById('screen-detail');
@@ -177,6 +185,39 @@
     clearTimeout(toastEl._t);
     toastEl._t = setTimeout(()=>{ toastEl.style.opacity='0'; }, 2600);
   }
+  function updateAdminUI(){
+    addBtn.style.display = session ? '' : 'none';
+    document.getElementById('edit-meta-btn').style.display = session ? '' : 'none';
+    authBtn.textContent = session ? 'ออกจากระบบผู้ดูแล' : 'เข้าสู่ระบบผู้ดูแล';
+    document.getElementById('import-btn').style.display = 'none';
+    document.getElementById('export-btn').style.display = 'none';
+    document.getElementById('refresh-file-btn').style.display = 'none';
+  }
+  function openLoginForm(){
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    overlay.innerHTML = `<div class="modal" style="max-width:420px">
+      <div class="modal-header"><h2>เข้าสู่ระบบผู้ดูแล</h2><button class="close-x" id="login-close">&times;</button></div>
+      <div class="field"><label class="field-label">อีเมล</label><input id="login-email" type="email" autocomplete="username"></div>
+      <div class="field"><label class="field-label">รหัสผ่าน</label><input id="login-password" type="password" autocomplete="current-password"></div>
+      <div class="modal-actions"><button class="btn btn-primary" id="login-submit">เข้าสู่ระบบ</button></div>
+    </div>`;
+    document.body.appendChild(overlay);
+    document.getElementById('login-close').addEventListener('click',()=>overlay.remove());
+    document.getElementById('login-submit').addEventListener('click',async ()=>{
+      const button = document.getElementById('login-submit');
+      button.disabled = true; button.textContent = 'กำลังเข้าสู่ระบบ...';
+      const email = document.getElementById('login-email').value.trim();
+      const password = document.getElementById('login-password').value;
+      const {data,error} = await cloud.auth.signInWithPassword({email,password});
+      if(error){ toast('อีเมลหรือรหัสผ่านไม่ถูกต้องค่ะ'); button.disabled=false; button.textContent='เข้าสู่ระบบ'; return; }
+      session = data.session; overlay.remove(); updateAdminUI(); route(); toast('เข้าสู่ระบบผู้ดูแลแล้วค่ะ');
+    });
+  }
+  authBtn.addEventListener('click',async ()=>{
+    if(session){ await cloud.auth.signOut(); session=null; updateAdminUI(); route(); toast('ออกจากระบบแล้วค่ะ'); }
+    else openLoginForm();
+  });
 
   // ---------- IndexedDB (large local storage for images) ----------
   function openDB(){
@@ -194,31 +235,59 @@
     return dbPromise;
   }
   async function idbGet(id){
-    const db = await openDB();
-    return new Promise((resolve,reject)=>{
-      const tx = db.transaction(STORE_PRODUCTS,'readonly');
-      const req = tx.objectStore(STORE_PRODUCTS).get(id);
-      req.onsuccess = ()=>resolve(req.result||null);
-      req.onerror = ()=>reject(req.error);
+    const {data:p,error} = await cloud.from('products').select('*').eq('id',id).single();
+    if(error) return null;
+    const {data:rows,error:imageError} = await cloud.from('product_images').select('*').eq('product_id',id).order('sort_order');
+    if(imageError) throw imageError;
+    const full = {id:p.id,sku:p.sku||'',name:p.name||'',color:p.color||'',tags:p.tags||[],categories:{official:[],review:[],merchant:[]}};
+    (rows||[]).forEach(r=>{
+      const category = full.categories[r.category] ? r.category : 'official';
+      full.categories[category].push({id:r.id,dataUrl:r.public_url,objectKey:r.object_key,skuText:r.sku_text||''});
     });
+    return full;
+  }
+  async function requireAdmin(){
+    const {data:{session:active}} = await cloud.auth.getSession();
+    session = active;
+    if(!session) throw new Error('กรุณาเข้าสู่ระบบผู้ดูแลก่อนค่ะ');
+    return session;
+  }
+  async function deleteRemoteObject(objectKey){
+    if(!objectKey) return;
+    const active = await requireAdmin();
+    await fetch(`${MEDIA_API}/images/${encodeURIComponent(objectKey)}`, {method:'DELETE',headers:{Authorization:`Bearer ${active.access_token}`}});
   }
   async function idbSet(record){
-    const db = await openDB();
-    return new Promise((resolve,reject)=>{
-      const tx = db.transaction(STORE_PRODUCTS,'readwrite');
-      tx.objectStore(STORE_PRODUCTS).put(record);
-      tx.oncomplete = ()=>resolve(true);
-      tx.onerror = ()=>reject(tx.error);
+    await requireAdmin();
+    const coverUrl = computeCoverSource(record);
+    const {error} = await cloud.from('products').upsert({
+      id:record.id, sku:record.sku||null, name:record.name||'', color:record.color||'',
+      tags:record.tags||[], cover_url:coverUrl, updated_at:new Date().toISOString()
     });
+    if(error) throw error;
+    const {data:oldRows} = await cloud.from('product_images').select('id,object_key').eq('product_id',record.id);
+    const rows = [];
+    CATS.forEach(c=>(record.categories[c.key]||[]).forEach((im,i)=>{
+      if(!im.id || !/^[0-9a-f]{8}-[0-9a-f-]{27}$/i.test(im.id)) im.id=crypto.randomUUID();
+      rows.push({id:im.id,product_id:record.id,object_key:im.objectKey,public_url:im.dataUrl,category:c.key,sku_text:im.skuText||'',sort_order:i});
+    }));
+    const keepKeys = new Set(rows.map(r=>r.object_key));
+    for(const old of (oldRows||[])) if(!keepKeys.has(old.object_key)) await deleteRemoteObject(old.object_key);
+    const {error:delError} = await cloud.from('product_images').delete().eq('product_id',record.id);
+    if(delError) throw delError;
+    if(rows.length){
+      const {error:insertError} = await cloud.from('product_images').insert(rows);
+      if(insertError) throw insertError;
+    }
+    return true;
   }
   async function idbDelete(id){
-    const db = await openDB();
-    return new Promise((resolve,reject)=>{
-      const tx = db.transaction(STORE_PRODUCTS,'readwrite');
-      tx.objectStore(STORE_PRODUCTS).delete(id);
-      tx.oncomplete = ()=>resolve(true);
-      tx.onerror = ()=>reject(tx.error);
-    });
+    await requireAdmin();
+    const {data:rows} = await cloud.from('product_images').select('object_key').eq('product_id',id);
+    for(const row of (rows||[])) await deleteRemoteObject(row.object_key);
+    const {error} = await cloud.from('products').delete().eq('id',id);
+    if(error) throw error;
+    return true;
   }
   async function idbSetSetting(key, value){
     const db = await openDB();
@@ -247,8 +316,13 @@
   }
   function lsRemove(key){ try{ localStorage.removeItem(key); }catch(e){} }
 
-  function loadIndex(){ index = lsGet(STORAGE_INDEX_KEY) || []; applyFilter(); }
-  function saveIndex(){ lsSet(STORAGE_INDEX_KEY, index); }
+  async function loadIndex(){
+    const {data:products,error} = await cloud.from('products').select('id,sku,name,color,tags,cover_url,product_images(id)').order('sort_order');
+    if(error){ homeContent.innerHTML='<div class="empty"><h3>โหลดข้อมูลไม่สำเร็จ</h3><div>กรุณาลองรีเฟรชหน้าเว็บค่ะ</div></div>'; return; }
+    index = (products||[]).map(p=>({id:p.id,sku:p.sku||'',name:p.name||'',color:p.color||'',tags:p.tags||[],cover:p.cover_url,totalCount:(p.product_images||[]).length}));
+    applyFilter();
+  }
+  function saveIndex(){ /* online database saves immediately */ }
 
   // ---------- one-time migration from old localStorage-only version ----------
   async function migrateLegacyIfNeeded(){
@@ -275,16 +349,21 @@
   }
 
   // ---------- routing ----------
-  function route(){
+  async function route(){
     const hash = location.hash;
     if(hash.startsWith('#product=')){
+      if(index.length===0) await loadIndex();
       showDetail(decodeURIComponent(hash.slice('#product='.length)));
-    }else{ showHome(); }
+    }else{ await showHome(); }
   }
   window.addEventListener('hashchange', route);
   document.getElementById('back-btn').addEventListener('click', ()=>{ location.hash = ''; });
 
-  function showHome(){ screenDetail.classList.remove('active'); screenHome.classList.add('active'); loadIndex(); renderLastImportInfo(); }
+  async function showHome(){
+    screenDetail.classList.remove('active'); screenHome.classList.add('active');
+    homeContent.innerHTML = '<div class="loading">กำลังโหลดข้อมูลออนไลน์...</div>';
+    await loadIndex();
+  }
 
   async function renderLastImportInfo(){
     const el = document.getElementById('last-import-line');
@@ -380,6 +459,18 @@
       reader.readAsDataURL(file);
     });
   }
+  async function uploadImage(dataUrl){
+    const active = await requireAdmin();
+    const blob = await (await fetch(dataUrl)).blob();
+    const response = await fetch(`${MEDIA_API}/upload`, {
+      method:'POST',
+      headers:{Authorization:`Bearer ${active.access_token}`,'Content-Type':'image/jpeg'},
+      body:blob
+    });
+    if(!response.ok) throw new Error(await response.text());
+    const uploaded = await response.json();
+    return {id:crypto.randomUUID(),dataUrl:uploaded.url,objectKey:uploaded.key};
+  }
   function loadImageEl(src){ return new Promise((resolve,reject)=>{ const img=new Image(); img.onload=()=>resolve(img); img.onerror=reject; img.src=src; }); }
   function makeThumb(dataUrl, maxDim=220, quality=0.55){
     return loadImageEl(dataUrl).then(img=>{
@@ -453,8 +544,9 @@
       drop.textContent = 'กำลังบันทึก...';
       try{
         const dataUrl = await compressImage(file);
-        const id = 'prod_' + Date.now() + '_' + Math.random().toString(36).slice(2,7);
-        const full = { id, sku:'', name:'', color:'', tags:[], categories:{ official:[{id:'img_'+Date.now(), dataUrl}], review:[], merchant:[] } };
+        const image = await uploadImage(dataUrl);
+        const id = crypto.randomUUID();
+        const full = { id, sku:'', name:'', color:'', tags:[], categories:{ official:[image], review:[], merchant:[] } };
         await persistProduct(full);
         overlay.remove();
         location.hash = '#product=' + encodeURIComponent(id);
@@ -518,7 +610,7 @@
   async function persistProduct(full){
     await idbSet(full);
     const coverSrc = computeCoverSource(full);
-    const cover = coverSrc ? await makeThumb(coverSrc) : null;
+    const cover = coverSrc || null;
     const summary = { id:full.id, sku:full.sku||'', name:full.name||'', color:full.color||'', tags:full.tags||[], totalCount:computeTotal(full), cover };
     const idx = index.findIndex(p=>p.id===full.id);
     if(idx>=0) index[idx] = summary; else index.push(summary);
@@ -570,16 +662,16 @@
         </div>
         ${isMerchant ? `
         <div class="sku-field-row">
-          <input data-sku-input="${i}" value="${esc(im.skuText||'')}" placeholder="รหัส SKU merchant"/>
+          <input data-sku-input="${i}" value="${esc(im.skuText||'')}" placeholder="รหัส SKU merchant" ${session?'':'disabled'}/>
           <button data-copy-text="${i}">Copy</button>
         </div>` : ''}
         <div class="img-actions">
           <button data-copy="${i}">คัดลอกรูป</button>
           <button data-dl="${i}">โหลด</button>
-          <button class="remove-btn" data-rm="${i}">นำออก</button>
+          ${session ? `<button class="remove-btn" data-rm="${i}">นำออก</button>` : ''}
         </div>
       </div>`).join('');
-    html += `<div class="add-tile" id="add-tile">+ เพิ่มรูป<br/>(เลือกได้หลายรูป)</div>`;
+    if(session) html += `<div class="add-tile" id="add-tile">+ เพิ่มรูป<br/>(เลือกได้หลายรูป)</div>`;
     html += `</div>`;
     body.innerHTML = html;
 
@@ -687,13 +779,15 @@
     });
 
     const addTile = document.getElementById('add-tile');
-    addTile.addEventListener('click', ()=>fileInput.click());
-    addTile.addEventListener('dragover', e=>{ e.preventDefault(); addTile.classList.add('over'); });
-    addTile.addEventListener('dragleave', ()=>addTile.classList.remove('over'));
-    addTile.addEventListener('drop', async e=>{
-      e.preventDefault(); addTile.classList.remove('over');
-      await handleIncomingFiles(e.dataTransfer.files);
-    });
+    if(addTile){
+      addTile.addEventListener('click', ()=>fileInput.click());
+      addTile.addEventListener('dragover', e=>{ e.preventDefault(); addTile.classList.add('over'); });
+      addTile.addEventListener('dragleave', ()=>addTile.classList.remove('over'));
+      addTile.addEventListener('drop', async e=>{
+        e.preventDefault(); addTile.classList.remove('over');
+        await handleIncomingFiles(e.dataTransfer.files);
+      });
+    }
   }
 
   async function handleIncomingFiles(files){
@@ -704,7 +798,7 @@
       if(!f.type.startsWith('image/')) continue;
       try{
         const compressed = await compressImage(f);
-        const entry = {id:'img_'+Date.now()+'_'+Math.random().toString(36).slice(2,6), dataUrl: compressed};
+        const entry = await uploadImage(compressed);
         if(activeTab === 'merchant') entry.skuText = '';
         currentFull.categories[activeTab].push(entry);
       }catch(e){}
@@ -821,9 +915,10 @@
   });
 
   (async function init(){
-    await migrateLegacyIfNeeded();
-    route();
-    renderLastImportInfo();
+    const {data} = await cloud.auth.getSession();
+    session = data.session;
+    updateAdminUI();
+    await route();
   })();
 })();
 </script>

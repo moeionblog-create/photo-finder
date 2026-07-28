@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>คลังรูปสินค้า</title>
+<style>
+  :root{
+    --ink:#2B2620; --paper:#FAF6F1; --paper-2:#F1EAE0; --line:#E2D8C8;
+    --teal:#3F6259; --teal-dark:#2C4741; --clay:#B5583A; --mustard:#C99A3D;
+    --muted:#8A8070; --white:#FFFFFF; --radius:14px;
+    --shadow: 0 2px 10px rgba(43,38,32,0.06), 0 1px 2px rgba(43,38,32,0.08);
+  }
+  *{box-sizing:border-box;}
+  html,body{ margin:0; padding:0; background:var(--paper); }
+  body{ font-family:'Work Sans', -apple-system, sans-serif; color:var(--ink); }
+  h1,h2,h3{ font-family:Georgia,'Iowan Old Style',serif; font-weight:600; letter-spacing:0.2px; margin:0; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:24px 20px 70px; }
+
+  .topbar{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; margin-bottom:8px; }
+  .brand{ font-size:26px; color:var(--teal-dark); }
+  .brand .sub{ display:block; font-family:'Work Sans',sans-serif; font-size:12.5px; font-weight:500; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; margin-top:2px; }
+  .searchbar{ flex:1; min-width:220px; display:flex; gap:8px; flex-wrap:wrap; }
+
+  input, textarea{ font-family:'Work Sans',sans-serif; font-size:14.5px; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--white); color:var(--ink); width:100%; outline:none; }
+  input:focus{ border-color:var(--teal); box-shadow:0 0 0 3px rgba(63,98,89,0.12); }
+  button{ font-family:'Work Sans',sans-serif; }
+  .btn{ font-weight:600; font-size:14px; padding:10px 18px; border-radius:10px; border:none; cursor:pointer; white-space:nowrap; transition:transform .08s ease, opacity .15s ease; }
+  .btn:active{ transform:scale(0.97); }
+  .btn-primary{ background:var(--teal); color:var(--white); }
+  .btn-primary:hover{ background:var(--teal-dark); }
+  .btn-ghost{ background:transparent; color:var(--teal-dark); border:1px solid var(--line); }
+  .btn-ghost:hover{ background:var(--paper-2); }
+  .btn-danger{ background:transparent; color:var(--clay); border:1px solid rgba(181,88,58,0.35); }
+  .btn-danger:hover{ background:rgba(181,88,58,0.08); }
+  .btn-sm{ padding:6px 11px; font-size:12.5px; border-radius:8px; }
+
+  .grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(190px,1fr)); gap:16px; }
+  .card{ background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; cursor:pointer; border:1px solid transparent; transition:border-color .15s ease, transform .1s ease; display:flex; flex-direction:column; }
+  .card:hover{ border-color:var(--teal); transform:translateY(-2px); }
+  .card-thumb{ width:100%; aspect-ratio:1/1; background:var(--paper-2); display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative; color:var(--muted); font-size:12px; text-align:center; }
+  .card-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .count-badge{ position:absolute; top:8px; right:8px; background:rgba(43,38,32,0.72); color:#fff; font-size:11.5px; font-weight:600; padding:2px 8px; border-radius:20px; }
+  .card-body{ padding:10px 12px 12px; }
+  .card-sku{ font-size:11.5px; color:var(--muted); font-weight:600; letter-spacing:0.4px; text-transform:uppercase; }
+  .card-name{ font-size:14.5px; font-weight:600; margin-top:2px; line-height:1.3; }
+  .card-name.placeholder{ font-style:italic; font-weight:500; color:var(--muted); }
+  .tags{ display:flex; flex-wrap:wrap; gap:5px; margin-top:7px; }
+  .tag{ font-size:11px; background:var(--paper-2); color:var(--teal-dark); padding:2px 8px; border-radius:20px; font-weight:500; }
+  .empty{ text-align:center; padding:60px 20px; color:var(--muted); }
+  .empty h3{ color:var(--ink); margin-bottom:6px; }
+
+  .overlay{ position:fixed; inset:0; background:rgba(43,38,32,0.55); display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px; }
+  .modal{ background:var(--paper); border-radius:16px; max-width:520px; width:100%; max-height:90vh; overflow-y:auto; padding:24px; box-shadow:0 12px 40px rgba(0,0,0,0.25); }
+  .modal-header{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:14px; gap:10px; }
+  .close-x{ background:none; border:none; font-size:22px; cursor:pointer; color:var(--muted); line-height:1; padding:4px; }
+  .field{ margin-bottom:14px; }
+  .field-label{ font-size:12.5px; font-weight:600; color:var(--muted); margin-bottom:5px; display:block; text-transform:uppercase; letter-spacing:0.3px; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .modal-actions{ display:flex; justify-content:flex-end; gap:10px; margin-top:20px; flex-wrap:wrap; }
+  .meta-line{ font-size:13.5px; color:var(--muted); margin-top:4px; }
+
+  .quick-drop{ border:2px dashed var(--line); border-radius:14px; padding:36px 16px; text-align:center; color:var(--muted); font-size:14px; cursor:pointer; background:var(--paper-2); }
+  .quick-drop:hover{ border-color:var(--teal); color:var(--teal-dark); }
+  .quick-drop.over{ border-color:var(--teal); background:#EAF1EE; }
+
+  #screen-home, #screen-detail{ display:none; }
+  #screen-home.active, #screen-detail.active{ display:block; }
+  .back-row{ display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+  .back-btn{ background:none; border:none; font-size:22px; cursor:pointer; color:var(--teal-dark); padding:2px 6px; }
+  .detail-head{ display:flex; justify-content:space-between; align-items:flex-start; gap:14px; margin-bottom:18px; flex-wrap:wrap; }
+
+  .tabs{ display:flex; gap:6px; border-bottom:1px solid var(--line); margin-bottom:18px; flex-wrap:wrap; }
+  .tab{ font-size:13.5px; font-weight:600; padding:10px 16px; background:none; border:none; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; display:flex; align-items:center; gap:6px; }
+  .tab.active{ color:var(--teal-dark); border-bottom-color:var(--teal); }
+  .tab-badge{ background:var(--paper-2); color:var(--teal-dark); font-size:11px; padding:1px 7px; border-radius:20px; }
+  .tab-hint{ font-size:12.5px; color:var(--muted); margin-bottom:14px; }
+  .select-bar{ display:flex; align-items:center; gap:12px; margin-bottom:14px; flex-wrap:wrap; }
+  .select-count{ font-size:12.5px; color:var(--muted); font-weight:600; }
+  .img-thumb-wrap{ position:relative; }
+  .sel-checkbox{ position:absolute; top:8px; left:8px; z-index:2; background:rgba(255,255,255,0.85); border-radius:6px; padding:3px; display:flex; }
+  .sel-checkbox input{ width:18px; height:18px; margin:0; }
+
+  .img-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(170px,1fr)); gap:14px; }
+  .img-tile{ background:var(--white); border-radius:10px; overflow:hidden; box-shadow:var(--shadow); cursor:grab; transition:opacity .15s ease, outline .1s ease; }
+  .img-tile.dragging{ opacity:0.4; }
+  .img-tile.drag-over{ outline:2px dashed var(--teal); outline-offset:-2px; }
+  .img-tile img{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; cursor:zoom-in; }
+  .sku-field-row{ display:flex; gap:6px; padding:8px 8px 0; }
+  .sku-field-row input{ font-size:12.5px; padding:7px 9px; }
+  .sku-field-row button{ font-size:11px; font-weight:600; padding:0 10px; border-radius:7px; border:none; cursor:pointer; background:var(--paper-2); color:var(--teal-dark); white-space:nowrap; }
+  .img-actions{ display:flex; gap:4px; padding:8px; flex-wrap:wrap; }
+  .img-actions button{ flex:1; font-size:11px; font-weight:600; padding:6px 4px; border-radius:6px; border:none; cursor:pointer; background:var(--paper-2); color:var(--teal-dark); white-space:nowrap; }
+  .img-actions button.remove-btn{ background:transparent; color:var(--muted); text-decoration:underline; flex:0 0 auto; }
+  .add-tile{ border:2px dashed var(--line); border-radius:10px; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--muted); font-size:12.5px; cursor:pointer; padding:8px; transition:border-color .15s ease, background .15s ease; }
+  .add-tile:hover, .add-tile.over{ border-color:var(--teal); color:var(--teal-dark); background:#EAF1EE; }
+
+  .toast{ position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:var(--ink); color:#fff; padding:10px 18px; border-radius:20px; font-size:13.5px; z-index:1200; opacity:0; transition:opacity .2s ease; pointer-events:none; max-width:90vw; text-align:center; }
+  .lightbox{ position:fixed; inset:0; background:rgba(20,18,14,0.9); z-index:1100; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .lightbox img{ max-width:100%; max-height:90vh; border-radius:8px; }
+  .loading{ text-align:center; padding:40px; color:var(--muted); font-size:14px; }
+  .storage-note{ font-size:12px; color:var(--muted); margin-top:20px; text-align:center; }
+  @media (max-width:520px){ .row2{ grid-template-columns:1fr; } .topbar{ flex-direction:column; align-items:stretch; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div id="screen-home" class="active">
+    <div class="topbar">
+      <div><h1 class="brand">คลังรูปสินค้า<span class="sub">ค้นเร็ว ส่งไว ไม่ต้องไล่โฟลเดอร์</span></h1></div>
+      <div class="searchbar">
+        <input id="search-input" placeholder="ค้นด้วย SKU, ชื่อ, สี, แท็ก..." />
+        <button class="btn btn-ghost" id="refresh-file-btn" title="เลือกไฟล์ครั้งแรก ครั้งต่อไปกดปุ่มเดียวโหลดไฟล์เดิมซ้ำได้เลย (Chrome เท่านั้น)">รีเฟรชจากไฟล์เดิม</button>
+        <button class="btn btn-ghost" id="import-btn">นำเข้า JSON</button>
+        <button class="btn btn-ghost" id="export-btn">ส่งออก JSON</button>
+        <button class="btn btn-primary" id="add-btn">+ เพิ่มสินค้า</button>
+      </div>
+      <input type="file" id="import-file-input" accept="application/json,.json" style="display:none" />
+    </div>
+    <div id="home-content"><div class="loading">กำลังโหลด...</div></div>
+    <div class="storage-note" id="last-import-line">กำลังตรวจสอบข้อมูลไฟล์ล่าสุด...</div>
+    <div class="storage-note">รูปทั้งหมดเก็บไว้ในเครื่องนี้ (IndexedDB) รองรับพื้นที่ได้มากกว่าเดิมมาก — ใช้ "ส่งออก/นำเข้า JSON" หรือ "รีเฟรชจากไฟล์เดิม" เพื่อสำรอง/ย้ายข้อมูลได้ค่ะ</div>
+  </div>
+
+  <div id="screen-detail">
+    <div class="back-row">
+      <button class="back-btn" id="back-btn">←</button>
+      <span style="color:var(--muted); font-size:13.5px;">กลับหน้าเลือกสินค้า</span>
+    </div>
+    <div class="detail-head">
+      <div>
+        <h2 id="detail-name"></h2>
+        <div class="meta-line" id="detail-color"></div>
+        <div class="tags" id="detail-tags"></div>
+      </div>
+      <button class="btn btn-ghost" id="edit-meta-btn">แก้ไขข้อมูลสินค้า</button>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div id="tab-body"><div class="loading">กำลังโหลด...</div></div>
+    <input type="file" id="cat-file-input" accept="image/*" multiple style="display:none" />
+  </div>
+
+</div>
+<div id="toast" class="toast"></div>
+
+<script>
+(function(){
+  const STORAGE_INDEX_KEY = 'pfv_product_index';
+  const STORAGE_PRODUCT_PREFIX = 'pfv_product_'; // legacy localStorage prefix, migrated to IndexedDB
+  const DB_NAME = 'pfvDB';
+  const DB_VERSION = 1;
+  const STORE_PRODUCTS = 'products';
+  const STORE_SETTINGS = 'settings';
+  const CATS = [
+    {key:'official', label:'รูปทางการ'},
+    {key:'review', label:'รูปรีวิว'},
+    {key:'merchant', label:'SKU Merchant'}
+  ];
+  let index = [];
+  let filtered = [];
+  let currentFull = null;
+  let activeTab = 'official';
+  let dbPromise = null;
+
+  const homeContent = document.getElementById('home-content');
+  const searchInput = document.getElementById('search-input');
+  const addBtn = document.getElementById('add-btn');
+  const toastEl = document.getElementById('toast');
+  const screenHome = document.getElementById('screen-home');
+  const screenDetail = document.getElementById('screen-detail');
+  const fileInput = document.getElementById('cat-file-input');
+
+  function esc(s){ return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function toast(msg){
+    toastEl.textContent = msg; toastEl.style.opacity = '1';
+    clearTimeout(toastEl._t);
+    toastEl._t = setTimeout(()=>{ toastEl.style.opacity='0'; }, 2600);
+  }
+
+  // ---------- IndexedDB (large local storage for images) ----------
+  function openDB(){
+    if(dbPromise) return dbPromise;
+    dbPromise = new Promise((resolve,reject)=>{
+      const req = indexedDB.open(DB_NAME, DB_VERSION);
+      req.onupgradeneeded = e=>{
+        const db = e.target.result;
+        if(!db.objectStoreNames.contains(STORE_PRODUCTS)) db.createObjectStore(STORE_PRODUCTS, {keyPath:'id'});
+        if(!db.objectStoreNames.contains(STORE_SETTINGS)) db.createObjectStore(STORE_SETTINGS, {keyPath:'key'});
+      };
+      req.onsuccess = ()=>resolve(req.result);
+      req.onerror = ()=>reject(req.error);
+    });
+    return dbPromise;
+  }
+  async function idbGet(id){
+    const db = await openDB();
+    return new Promise((resolve,reject)=>{
+      const tx = db.transaction(STORE_PRODUCTS,'readonly');
+      const req = tx.objectStore(STORE_PRODUCTS).get(id);
+      req.onsuccess = ()=>resolve(req.result||null);
+      req.onerror = ()=>reject(req.error);
+    });
+  }
+  async function idbSet(record){
+    const db = await openDB();
+    return new Promise((resolve,reject)=>{
+      const tx = db.transaction(STORE_PRODUCTS,'readwrite');
+      tx.objectStore(STORE_PRODUCTS).put(record);
+      tx.oncomplete = ()=>resolve(true);
+      tx.onerror = ()=>reject(tx.error);
+    });
+  }
+  async function idbDelete(id){
+    const db = await openDB();
+    return new Promise((resolve,reject)=>{
+      const tx = db.transaction(STORE_PRODUCTS,'readwrite');
+      tx.objectStore(STORE_PRODUCTS).delete(id);
+      tx.oncomplete = ()=>resolve(true);
+      tx.onerror = ()=>reject(tx.error);
+    });
+  }
+  async function idbSetSetting(key, value){
+    const db = await openDB();
+    return new Promise((resolve,reject)=>{
+      const tx = db.transaction(STORE_SETTINGS,'readwrite');
+      tx.objectStore(STORE_SETTINGS).put({key, value});
+      tx.oncomplete = ()=>resolve(true);
+      tx.onerror = ()=>reject(tx.error);
+    });
+  }
+  async function idbGetSetting(key){
+    const db = await openDB();
+    return new Promise((resolve,reject)=>{
+      const tx = db.transaction(STORE_SETTINGS,'readonly');
+      const req = tx.objectStore(STORE_SETTINGS).get(key);
+      req.onsuccess = ()=>resolve(req.result ? req.result.value : null);
+      req.onerror = ()=>reject(req.error);
+    });
+  }
+
+  // ---------- small localStorage helpers (index summary only, kept small) ----------
+  function lsGet(key){ try{ const v = localStorage.getItem(key); return v ? JSON.parse(v) : null; } catch(e){ return null; } }
+  function lsSet(key, value){
+    try{ localStorage.setItem(key, JSON.stringify(value)); return true; }
+    catch(e){ toast('บันทึกรายการไม่สำเร็จ ลองอีกครั้งค่ะ'); return false; }
+  }
+  function lsRemove(key){ try{ localStorage.removeItem(key); }catch(e){} }
+
+  function loadIndex(){ index = lsGet(STORAGE_INDEX_KEY) || []; applyFilter(); }
+  function saveIndex(){ lsSet(STORAGE_INDEX_KEY, index); }
+
+  // ---------- one-time migration from old localStorage-only version ----------
+  async function migrateLegacyIfNeeded(){
+    const legacyKeys = Object.keys(localStorage).filter(k=>k.startsWith(STORAGE_PRODUCT_PREFIX));
+    if(legacyKeys.length === 0) return;
+    toast('กำลังปรับปรุงระบบจัดเก็บข้อมูลให้รองรับรูปได้มากขึ้น รอสักครู่ค่ะ...');
+    const newIndex = [];
+    for(const key of legacyKeys){
+      try{
+        const full = JSON.parse(localStorage.getItem(key));
+        if(full && full.id){
+          if(!full.categories) full.categories = {official:[],review:[],merchant:[]};
+          await idbSet(full);
+          const coverSrc = computeCoverSource(full);
+          const thumb = coverSrc ? await makeThumb(coverSrc) : null;
+          newIndex.push({ id:full.id, sku:full.sku||'', name:full.name||'', color:full.color||'', tags:full.tags||[], totalCount:computeTotal(full), cover:thumb });
+        }
+      }catch(e){}
+      lsRemove(key);
+    }
+    index = newIndex;
+    saveIndex();
+    toast('ปรับปรุงเสร็จแล้ว พื้นที่จัดเก็บโล่งขึ้นมากค่ะ');
+  }
+
+  // ---------- routing ----------
+  function route(){
+    const hash = location.hash;
+    if(hash.startsWith('#product=')){
+      showDetail(decodeURIComponent(hash.slice('#product='.length)));
+    }else{ showHome(); }
+  }
+  window.addEventListener('hashchange', route);
+  document.getElementById('back-btn').addEventListener('click', ()=>{ location.hash = ''; });
+
+  function showHome(){ screenDetail.classList.remove('active'); screenHome.classList.add('active'); loadIndex(); renderLastImportInfo(); }
+
+  async function renderLastImportInfo(){
+    const el = document.getElementById('last-import-line');
+    let info = null;
+    try{ info = await idbGetSetting('lastImportInfo'); }catch(e){}
+    if(!info || !info.filename){
+      el.textContent = 'ยังไม่เคยนำเข้าไฟล์ JSON ในเครื่องนี้';
+      return;
+    }
+    const d = new Date(info.importedAt);
+    const dateStr = d.toLocaleString('th-TH', {dateStyle:'short', timeStyle:'short'});
+    el.textContent = `อัปเดตข้อมูลล่าสุดจากไฟล์: ${info.filename} (${dateStr})`;
+  }
+
+  async function showDetail(id){
+    const summary = index.find(p=>p.id===id);
+    if(!summary){ location.hash = ''; return; }
+    screenHome.classList.remove('active');
+    screenDetail.classList.add('active');
+    document.getElementById('tab-body').innerHTML = '<div class="loading">กำลังโหลดรูป...</div>';
+    document.getElementById('detail-name').textContent = summary.name || 'ยังไม่ตั้งชื่อสินค้า';
+    document.getElementById('detail-color').textContent = summary.color || '';
+    document.getElementById('detail-tags').innerHTML = (summary.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+    window.scrollTo(0,0);
+
+    let full = null;
+    try{ full = await idbGet(id); }catch(e){}
+    currentFull = full || {id, sku:summary.sku, name:summary.name, color:summary.color, tags:summary.tags, categories:{official:[],review:[],merchant:[]}};
+    if(!currentFull.categories) currentFull.categories = {official:[],review:[],merchant:[]};
+    activeTab = 'official';
+    renderDetailHeader(); renderTabs(); renderTabBody();
+  }
+
+  // ---------- home grid ----------
+  function applyFilter(){
+    const q = (searchInput.value||'').trim().toLowerCase();
+    filtered = !q ? index.slice() : index.filter(p=>{
+      const hay = [p.sku, p.name, p.color, ...(p.tags||[])].join(' ').toLowerCase();
+      return hay.includes(q);
+    });
+    renderGrid();
+  }
+  searchInput.addEventListener('input', applyFilter);
+
+  function renderGrid(){
+    if(index.length === 0){
+      homeContent.innerHTML = `<div class="empty"><h3>ยังไม่มีสินค้าในคลัง</h3><div>กด "+ เพิ่มสินค้า" แล้วใส่รูปปกได้เลยค่ะ</div></div>`;
+      return;
+    }
+    if(filtered.length === 0){
+      homeContent.innerHTML = `<div class="empty"><h3>ไม่พบสินค้าที่ค้นหา</h3><div>ลองค้นด้วยคำอื่น เช่น สี หรือแท็ก</div></div>`;
+      return;
+    }
+    homeContent.innerHTML = `<div class="grid">` + filtered.map(p=>`
+      <div class="card" data-id="${esc(p.id)}">
+        <div class="card-thumb">
+          ${p.cover ? `<img src="${p.cover}" loading="lazy" />` : 'ยังไม่มีรูป'}
+          <span class="count-badge">${(p.totalCount||0)} รูป</span>
+        </div>
+        <div class="card-body">
+          ${p.sku ? `<div class="card-sku">${esc(p.sku)}</div>` : ''}
+          <div class="card-name ${p.name ? '' : 'placeholder'}">${p.name ? esc(p.name) : 'ยังไม่ตั้งชื่อ (แตะเพื่อแก้ไข)'}</div>
+          <div class="tags">
+            ${p.color ? `<span class="tag">${esc(p.color)}</span>` : ''}
+            ${(p.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}
+          </div>
+        </div>
+      </div>`).join('') + `</div>`;
+    homeContent.querySelectorAll('.card').forEach(el=>{
+      el.addEventListener('click', ()=>{ location.hash = '#product=' + encodeURIComponent(el.dataset.id); });
+    });
+  }
+
+  // ---------- image helpers ----------
+  function compressImage(file, maxDim=1100, quality=0.72){
+    return new Promise((resolve,reject)=>{
+      const reader = new FileReader();
+      reader.onload = e=>{
+        const img = new Image();
+        img.onload = ()=>{
+          let {width, height} = img;
+          if(width > height && width > maxDim){ height = height*(maxDim/width); width = maxDim; }
+          else if(height > maxDim){ width = width*(maxDim/height); height = maxDim; }
+          const canvas = document.createElement('canvas');
+          canvas.width = width; canvas.height = height;
+          canvas.getContext('2d').drawImage(img,0,0,width,height);
+          resolve(canvas.toDataURL('image/jpeg', quality));
+        };
+        img.onerror = reject;
+        img.src = e.target.result;
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+  function loadImageEl(src){ return new Promise((resolve,reject)=>{ const img=new Image(); img.onload=()=>resolve(img); img.onerror=reject; img.src=src; }); }
+  function makeThumb(dataUrl, maxDim=220, quality=0.55){
+    return loadImageEl(dataUrl).then(img=>{
+      let {naturalWidth:width, naturalHeight:height} = img;
+      if(width > height && width > maxDim){ height = height*(maxDim/width); width = maxDim; }
+      else if(height > maxDim){ width = width*(maxDim/height); height = maxDim; }
+      const canvas = document.createElement('canvas');
+      canvas.width = width; canvas.height = height;
+      canvas.getContext('2d').drawImage(img,0,0,width,height);
+      return canvas.toDataURL('image/jpeg', quality);
+    }).catch(()=>null);
+  }
+  function downloadDataUrl(dataUrl, filename){ const a=document.createElement('a'); a.href=dataUrl; a.download=filename; document.body.appendChild(a); a.click(); a.remove(); }
+  async function copyImageToClipboard(dataUrl){
+    try{
+      const img = await loadImageEl(dataUrl);
+      const canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+      canvas.getContext('2d').drawImage(img,0,0);
+      const blob = await new Promise(res=>canvas.toBlob(res,'image/png'));
+      if(!navigator.clipboard || !window.ClipboardItem) throw new Error('no clipboard api');
+      await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
+      toast('คัดลอกรูปแล้ว วางได้เลย (Ctrl+V)');
+    }catch(e){
+      toast('เบราว์เซอร์นี้คัดลอกรูปไม่ได้ ดาวน์โหลดให้แทนค่ะ');
+      downloadDataUrl(dataUrl, 'photo.jpg');
+    }
+  }
+  async function copyTextToClipboard(text, msg){
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){ await navigator.clipboard.writeText(text); }
+      else{
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+        document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); ta.remove();
+      }
+      toast(msg || 'คัดลอกแล้ว');
+    }catch(e){ toast('คัดลอกไม่สำเร็จ ลองอีกครั้งค่ะ'); }
+  }
+
+  // ---------- quick add (cover photo only) ----------
+  function openQuickAddForm(){
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    overlay.innerHTML = `
+      <div class="modal" style="max-width:420px;">
+        <div class="modal-header"><h2>เพิ่มสินค้าใหม่</h2><button class="close-x" id="qa-close">&times;</button></div>
+        <div class="quick-drop" id="qa-drop">คลิกหรือลากรูปหน้าปกมาวางที่นี่<br/>(1 รูป)</div>
+        <input type="file" id="qa-file" accept="image/*" style="display:none" />
+      </div>`;
+    document.body.appendChild(overlay);
+    const drop = document.getElementById('qa-drop');
+    const qaFile = document.getElementById('qa-file');
+    document.getElementById('qa-close').addEventListener('click', ()=>overlay.remove());
+    overlay.addEventListener('click', e=>{ if(e.target===overlay) overlay.remove(); });
+    drop.addEventListener('click', ()=>qaFile.click());
+    drop.addEventListener('dragover', e=>{ e.preventDefault(); drop.classList.add('over'); });
+    drop.addEventListener('dragleave', ()=>drop.classList.remove('over'));
+    drop.addEventListener('drop', async e=>{
+      e.preventDefault(); drop.classList.remove('over');
+      const f = e.dataTransfer.files && e.dataTransfer.files[0];
+      if(f) await createQuick(f);
+    });
+    qaFile.addEventListener('change', async ()=>{
+      const f = qaFile.files && qaFile.files[0];
+      if(f) await createQuick(f);
+    });
+    async function createQuick(file){
+      if(!file.type.startsWith('image/')) return;
+      drop.textContent = 'กำลังบันทึก...';
+      try{
+        const dataUrl = await compressImage(file);
+        const id = 'prod_' + Date.now() + '_' + Math.random().toString(36).slice(2,7);
+        const full = { id, sku:'', name:'', color:'', tags:[], categories:{ official:[{id:'img_'+Date.now(), dataUrl}], review:[], merchant:[] } };
+        await persistProduct(full);
+        overlay.remove();
+        location.hash = '#product=' + encodeURIComponent(id);
+      }catch(e){
+        toast('เพิ่มรูปไม่สำเร็จ ลองใหม่อีกครั้งค่ะ');
+        drop.textContent = 'คลิกหรือลากรูปหน้าปกมาวางที่นี่ (1 รูป)';
+      }
+    }
+  }
+  addBtn.addEventListener('click', openQuickAddForm);
+
+  // ---------- edit metadata modal ----------
+  function openEditMetaForm(product){
+    const overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    overlay.innerHTML = `
+      <div class="modal">
+        <div class="modal-header"><h2>แก้ไขข้อมูลสินค้า</h2><button class="close-x" id="form-close">&times;</button></div>
+        <div class="row2">
+          <div class="field"><label class="field-label">SKU</label><input id="f-sku" value="${esc(product.sku||'')}" placeholder="p05-blue"/></div>
+          <div class="field"><label class="field-label">สี</label><input id="f-color" value="${esc(product.color||'')}" placeholder="น้ำเงิน"/></div>
+        </div>
+        <div class="field"><label class="field-label">ชื่อสินค้า</label><input id="f-name" value="${esc(product.name||'')}" placeholder="เดรสผ้าลินิน แขนพอง"/></div>
+        <div class="field"><label class="field-label">แท็ก (คั่นด้วยจุลภาค)</label><input id="f-tags" value="${esc((product.tags||[]).join(', '))}" placeholder="ผ้าลินิน, ทรงเอ, ไซส์ฟรี"/></div>
+        <div class="modal-actions">
+          <button class="btn btn-danger" id="delete-btn">ลบสินค้านี้</button>
+          <button class="btn btn-ghost" id="cancel-btn">ยกเลิก</button>
+          <button class="btn btn-primary" id="save-btn">บันทึก</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    document.getElementById('form-close').addEventListener('click', ()=>overlay.remove());
+    document.getElementById('cancel-btn').addEventListener('click', ()=>overlay.remove());
+    overlay.addEventListener('click', e=>{ if(e.target===overlay) overlay.remove(); });
+    document.getElementById('delete-btn').addEventListener('click', async ()=>{
+      if(!confirm('ลบสินค้านี้และรูปทั้งหมดหรือไม่? กู้คืนไม่ได้นะคะ')) return;
+      index = index.filter(p=>p.id !== product.id);
+      saveIndex();
+      try{ await idbDelete(product.id); }catch(e){}
+      overlay.remove();
+      location.hash = '';
+    });
+    document.getElementById('save-btn').addEventListener('click', async ()=>{
+      const sku = document.getElementById('f-sku').value.trim();
+      const name = document.getElementById('f-name').value.trim();
+      const color = document.getElementById('f-color').value.trim();
+      const tags = document.getElementById('f-tags').value.split(',').map(t=>t.trim()).filter(Boolean);
+      let full = null;
+      try{ full = await idbGet(product.id); }catch(e){}
+      if(!full) full = {id:product.id, categories:{official:[],review:[],merchant:[]}};
+      full.sku = sku; full.name = name; full.color = color; full.tags = tags;
+      await persistProduct(full);
+      overlay.remove();
+      if(location.hash === '#product='+encodeURIComponent(product.id)) showDetail(product.id);
+    });
+  }
+
+  function computeCoverSource(full){ for(const c of CATS){ const arr = full.categories[c.key]||[]; if(arr.length) return arr[0].dataUrl; } return null; }
+  function computeTotal(full){ return CATS.reduce((s,c)=> s + (full.categories[c.key]||[]).length, 0); }
+
+  async function persistProduct(full){
+    await idbSet(full);
+    const coverSrc = computeCoverSource(full);
+    const cover = coverSrc ? await makeThumb(coverSrc) : null;
+    const summary = { id:full.id, sku:full.sku||'', name:full.name||'', color:full.color||'', tags:full.tags||[], totalCount:computeTotal(full), cover };
+    const idx = index.findIndex(p=>p.id===full.id);
+    if(idx>=0) index[idx] = summary; else index.push(summary);
+    saveIndex();
+    applyFilter();
+  }
+
+  // ---------- detail page ----------
+  document.getElementById('edit-meta-btn').addEventListener('click', ()=>openEditMetaForm(currentFull));
+
+  function renderDetailHeader(){
+    document.getElementById('detail-name').textContent = currentFull.name || 'ยังไม่ตั้งชื่อสินค้า';
+    document.getElementById('detail-color').textContent = currentFull.color || '';
+    document.getElementById('detail-tags').innerHTML = (currentFull.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+  }
+
+  function renderTabs(){
+    document.getElementById('tabs').innerHTML = CATS.map(c=>`
+      <button class="tab ${c.key===activeTab?'active':''}" data-tab="${c.key}">
+        ${esc(c.label)} <span class="tab-badge">${(currentFull.categories[c.key]||[]).length}</span>
+      </button>`).join('');
+    document.querySelectorAll('.tab').forEach(btn=>{
+      btn.addEventListener('click', ()=>{ activeTab = btn.dataset.tab; selectMode=false; selectedIdxs=new Set(); renderTabs(); renderTabBody(); });
+    });
+  }
+
+  let selectMode = false;
+  let selectedIdxs = new Set();
+
+  function renderTabBody(){
+    const body = document.getElementById('tab-body');
+    const imgs = currentFull.categories[activeTab] || [];
+    const isMerchant = activeTab === 'merchant';
+    let html = '';
+    if(isMerchant){
+      html += `<div class="tab-hint">ใส่รูปได้หลายรูป แต่ละรูปใส่รหัส SKU merchant ของตัวเองด้านล่างได้เลยค่ะ</div>`;
+    }
+    html += `<div class="select-bar">
+      <button class="btn btn-sm btn-ghost" id="toggle-select-btn">${selectMode ? 'ยกเลิกการเลือก' : 'เลือกหลายรูป'}</button>
+      ${selectMode ? `<span class="select-count">เลือกแล้ว ${selectedIdxs.size} รูป</span><button class="btn btn-sm btn-primary" id="bulk-download-btn">ดาวน์โหลดรูปที่เลือก</button>` : ''}
+    </div>`;
+    html += `<div class="tab-hint">ลากรูปเพื่อสลับลำดับได้เลยค่ะ</div>`;
+    html += `<div class="img-grid">`;
+    html += imgs.map((im,i)=>`
+      <div class="img-tile" draggable="${selectMode ? 'false' : 'true'}" data-tile-idx="${i}">
+        <div class="img-thumb-wrap">
+          ${selectMode ? `<label class="sel-checkbox"><input type="checkbox" data-sel="${i}" ${selectedIdxs.has(i)?'checked':''}/></label>` : ''}
+          <img src="${im.dataUrl}" data-idx="${i}"/>
+        </div>
+        ${isMerchant ? `
+        <div class="sku-field-row">
+          <input data-sku-input="${i}" value="${esc(im.skuText||'')}" placeholder="รหัส SKU merchant"/>
+          <button data-copy-text="${i}">Copy</button>
+        </div>` : ''}
+        <div class="img-actions">
+          <button data-copy="${i}">คัดลอกรูป</button>
+          <button data-dl="${i}">โหลด</button>
+          <button class="remove-btn" data-rm="${i}">นำออก</button>
+        </div>
+      </div>`).join('');
+    html += `<div class="add-tile" id="add-tile">+ เพิ่มรูป<br/>(เลือกได้หลายรูป)</div>`;
+    html += `</div>`;
+    body.innerHTML = html;
+
+    if(!selectMode){
+      let dragSrcIndex = null;
+      body.querySelectorAll('.img-tile').forEach(tile=>{
+        const i = Number(tile.dataset.tileIdx);
+        tile.addEventListener('dragstart', e=>{
+          dragSrcIndex = i;
+          e.dataTransfer.effectAllowed = 'move';
+          e.dataTransfer.setData('text/plain', String(i));
+          tile.classList.add('dragging');
+        });
+        tile.addEventListener('dragend', ()=>{
+          tile.classList.remove('dragging');
+          body.querySelectorAll('.img-tile.drag-over').forEach(t=>t.classList.remove('drag-over'));
+        });
+        tile.addEventListener('dragover', e=>{ e.preventDefault(); tile.classList.add('drag-over'); });
+        tile.addEventListener('dragleave', ()=>tile.classList.remove('drag-over'));
+        tile.addEventListener('drop', async e=>{
+          e.preventDefault();
+          tile.classList.remove('drag-over');
+          const srcIdx = dragSrcIndex !== null ? dragSrcIndex : Number(e.dataTransfer.getData('text/plain'));
+          const targetIdx = i;
+          if(isNaN(srcIdx) || srcIdx === targetIdx) return;
+          const arr = currentFull.categories[activeTab];
+          const [moved] = arr.splice(srcIdx, 1);
+          const insertPos = srcIdx < targetIdx ? targetIdx - 1 : targetIdx;
+          arr.splice(insertPos, 0, moved);
+          await persistProduct(currentFull);
+          renderTabs(); renderTabBody();
+        });
+      });
+    }
+
+    document.getElementById('toggle-select-btn').addEventListener('click', ()=>{
+      selectMode = !selectMode;
+      selectedIdxs = new Set();
+      renderTabBody();
+    });
+    if(selectMode){
+      body.querySelectorAll('[data-sel]').forEach(cb=>{
+        cb.addEventListener('change', ()=>{
+          const i = Number(cb.dataset.sel);
+          if(cb.checked) selectedIdxs.add(i); else selectedIdxs.delete(i);
+          document.querySelector('.select-count').textContent = `เลือกแล้ว ${selectedIdxs.size} รูป`;
+        });
+      });
+      const bulkBtn = document.getElementById('bulk-download-btn');
+      if(bulkBtn){
+        bulkBtn.addEventListener('click', async ()=>{
+          if(selectedIdxs.size === 0){ toast('ยังไม่ได้เลือกรูปเลยค่ะ'); return; }
+          const chosen = Array.from(selectedIdxs).sort((a,b)=>a-b);
+          toast(`กำลังดาวน์โหลด ${chosen.length} รูป...`);
+          for(let k=0;k<chosen.length;k++){
+            const i = chosen[k];
+            downloadDataUrl(imgs[i].dataUrl, (currentFull.sku||currentFull.id) + '_' + activeTab + '_' + (i+1) + '.jpg');
+            await new Promise(res=>setTimeout(res, 350));
+          }
+          toast('โหลดครบแล้ว ลากไฟล์จากโฟลเดอร์ดาวน์โหลดไปวางในแชทได้เลยค่ะ');
+        });
+      }
+    }
+
+    body.querySelectorAll('img[data-idx]').forEach(img=>{
+      img.addEventListener('click', ()=>{
+        const lb = document.createElement('div'); lb.className = 'lightbox';
+        lb.innerHTML = `<img src="${img.src}"/>`;
+        lb.addEventListener('click', ()=>lb.remove());
+        document.body.appendChild(lb);
+      });
+    });
+    if(isMerchant){
+      body.querySelectorAll('[data-sku-input]').forEach(inp=>{
+        const i = Number(inp.dataset.skuInput);
+        inp.addEventListener('input', ()=>{ imgs[i].skuText = inp.value; });
+        inp.addEventListener('blur', ()=>persistProduct(currentFull));
+      });
+      body.querySelectorAll('[data-copy-text]').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const i = Number(btn.dataset.copyText);
+          const val = imgs[i].skuText || '';
+          if(!val){ toast('ยังไม่ได้กรอกรหัส SKU merchant'); return; }
+          copyTextToClipboard(val, 'คัดลอกรหัส SKU merchant แล้ว');
+        });
+      });
+    }
+    body.querySelectorAll('[data-copy]').forEach(btn=>{
+      btn.addEventListener('click', ()=>copyImageToClipboard(imgs[Number(btn.dataset.copy)].dataUrl));
+    });
+    body.querySelectorAll('[data-dl]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const i = Number(btn.dataset.dl);
+        downloadDataUrl(imgs[i].dataUrl, (currentFull.sku||currentFull.id) + '_' + activeTab + '_' + (i+1) + '.jpg');
+      });
+    });
+    body.querySelectorAll('[data-rm]').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        const i = Number(btn.dataset.rm);
+        if(!confirm('นำรูปนี้ออกจากคลังหรือไม่คะ?')) return;
+        currentFull.categories[activeTab].splice(i,1);
+        await persistProduct(currentFull);
+        renderTabs(); renderTabBody();
+      });
+    });
+
+    const addTile = document.getElementById('add-tile');
+    addTile.addEventListener('click', ()=>fileInput.click());
+    addTile.addEventListener('dragover', e=>{ e.preventDefault(); addTile.classList.add('over'); });
+    addTile.addEventListener('dragleave', ()=>addTile.classList.remove('over'));
+    addTile.addEventListener('drop', async e=>{
+      e.preventDefault(); addTile.classList.remove('over');
+      await handleIncomingFiles(e.dataTransfer.files);
+    });
+  }
+
+  async function handleIncomingFiles(files){
+    if(!files || !files.length) return;
+    const addTile = document.getElementById('add-tile');
+    if(addTile) addTile.textContent = 'กำลังบีบอัด...';
+    for(const f of files){
+      if(!f.type.startsWith('image/')) continue;
+      try{
+        const compressed = await compressImage(f);
+        const entry = {id:'img_'+Date.now()+'_'+Math.random().toString(36).slice(2,6), dataUrl: compressed};
+        if(activeTab === 'merchant') entry.skuText = '';
+        currentFull.categories[activeTab].push(entry);
+      }catch(e){}
+    }
+    await persistProduct(currentFull);
+    renderTabs(); renderTabBody();
+  }
+
+  fileInput.addEventListener('change', async ()=>{
+    await handleIncomingFiles(fileInput.files);
+    fileInput.value = '';
+  });
+
+  // ---------- export / import JSON ----------
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  async function exportAllData(){
+    const data = { exportedAt: new Date().toISOString(), products: {} };
+    for(const p of index){
+      try{ const full = await idbGet(p.id); if(full) data.products[p.id] = full; }catch(e){}
+    }
+    const blob = new Blob([JSON.stringify(data)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const d = new Date();
+    const fname = `photo-vault-backup-${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}.json`;
+    const a = document.createElement('a'); a.href = url; a.download = fname;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toast('ส่งออกไฟล์ JSON แล้ว');
+  }
+  document.getElementById('export-btn').addEventListener('click', exportAllData);
+
+  async function processImportPayload(rawText, opts){
+    opts = opts || {};
+    let data;
+    try{ data = JSON.parse(rawText); }
+    catch(err){ toast('ไฟล์ไม่ใช่ JSON ที่ถูกต้อง'); return; }
+    const products = data && data.products;
+    if(!products || typeof products !== 'object'){ toast('ไฟล์ไม่ตรงรูปแบบที่ใช้ได้'); return; }
+    const ids = Object.keys(products);
+    if(ids.length === 0){ toast('ไม่พบสินค้าในไฟล์นี้'); return; }
+    if(!opts.skipConfirm){
+      const overlapping = ids.filter(id => index.some(p=>p.id===id)).length;
+      const msg = overlapping > 0
+        ? `พบ ${ids.length} รายการในไฟล์ (${overlapping} รายการซ้ำกับที่มีอยู่ จะถูกอัปเดตทับ) ยืนยันนำเข้าไหมคะ?`
+        : `พบ ${ids.length} รายการในไฟล์ ยืนยันนำเข้าไหมคะ?`;
+      if(!confirm(msg)) return;
+    }
+    let count = 0;
+    for(const id of ids){
+      const full = products[id];
+      if(!full || !full.id) continue;
+      if(!full.categories) full.categories = {official:[],review:[],merchant:[]};
+      try{
+        await idbSet(full);
+        const coverSrc = computeCoverSource(full);
+        const cover = coverSrc ? await makeThumb(coverSrc) : null;
+        const summary = { id:full.id, sku:full.sku||'', name:full.name||'', color:full.color||'', tags:full.tags||[], totalCount:computeTotal(full), cover };
+        const idx = index.findIndex(p=>p.id===full.id);
+        if(idx>=0) index[idx] = summary; else index.push(summary);
+        count++;
+      }catch(e){}
+    }
+    saveIndex();
+    applyFilter();
+    if(opts.filename){
+      try{ await idbSetSetting('lastImportInfo', {filename: opts.filename, importedAt: Date.now()}); }catch(e){}
+      renderLastImportInfo();
+    }
+    toast(`อัปเดตสำเร็จ ${count} รายการ`);
+  }
+
+  const importFileInput = document.getElementById('import-file-input');
+  document.getElementById('import-btn').addEventListener('click', ()=>importFileInput.click());
+  importFileInput.addEventListener('change', ()=>{
+    const file = importFileInput.files && importFileInput.files[0];
+    importFileInput.value = '';
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = e=>processImportPayload(e.target.result, {skipConfirm:false, filename:file.name});
+    reader.readAsText(file);
+  });
+
+  // ---------- refresh from remembered file (Chrome File System Access API) ----------
+  const refreshBtn = document.getElementById('refresh-file-btn');
+  async function importFromHandle(handle){
+    const file = await handle.getFile();
+    const text = await file.text();
+    await processImportPayload(text, {skipConfirm:true, filename: handle.name});
+  }
+  async function pickAndRememberFile(){
+    try{
+      const [handle] = await window.showOpenFilePicker({types:[{description:'JSON', accept:{'application/json':['.json']}}]});
+      await idbSetSetting('lastFileHandle', handle);
+      await importFromHandle(handle);
+    }catch(e){ /* user cancelled picker, ignore */ }
+  }
+  refreshBtn.addEventListener('click', async ()=>{
+    if(!window.showOpenFilePicker){
+      toast('เบราว์เซอร์นี้ไม่รองรับฟีเจอร์นี้ ใช้ปุ่ม "นำเข้า JSON" แทนค่ะ (รองรับเฉพาะ Chrome)');
+      return;
+    }
+    let handle = null;
+    try{ handle = await idbGetSetting('lastFileHandle'); }catch(e){}
+    if(!handle){ await pickAndRememberFile(); return; }
+    try{
+      const perm = await handle.requestPermission({mode:'read'});
+      if(perm !== 'granted'){ toast('ไม่ได้รับอนุญาตให้อ่านไฟล์ ลองเลือกไฟล์ใหม่ค่ะ'); await pickAndRememberFile(); return; }
+      await importFromHandle(handle);
+    }catch(e){
+      toast('อ่านไฟล์เดิมไม่สำเร็จ ลองเลือกไฟล์ใหม่อีกครั้งค่ะ');
+      await pickAndRememberFile();
+    }
+  });
+
+  (async function init(){
+    await migrateLegacyIfNeeded();
+    route();
+    renderLastImportInfo();
+  })();
+})();
+</script>
+</body>
+</html>

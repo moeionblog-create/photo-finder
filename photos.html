@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>รูปของฉัน · คัดลอกรหัสสินค้า</title>
+  <link rel="icon" href="chihuahua-web-icon-v2.png">
+  <link rel="stylesheet" href="sku.css?v=20260914-tags">
+  <style>
+    main{max-width:1100px}.photo-list{display:grid;gap:24px}.linked-photo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.linked-image{margin:0;background:#eeeae4;align-self:start}.linked-image img{display:block;width:100%;height:auto}.linked-image figcaption{padding:10px 16px;font-size:.8rem;color:var(--muted);overflow-wrap:anywhere}.linked-info{padding:24px}.linked-info h2{margin:0 0 12px;font-size:1.3rem}.linked-info h3{margin:0 0 10px;font-size:1rem}.linked-codes{display:grid;gap:14px;margin-top:20px}.linked-code{padding:16px;border:1px solid var(--line);border-radius:12px}.linked-code:first-child{background:#f3f7f3;border-color:#b7c8bc}.linked-code details{margin-top:10px}.photo-tags{display:flex;gap:6px;flex-wrap:wrap}.photo-tags button{padding:5px 11px}.help{font-size:.875rem;line-height:1.8}.header-inner{flex-wrap:wrap}@media(max-width:700px){.linked-photo{grid-template-columns:1fr}.linked-info{padding:18px}.linked-image img{max-height:65vh;object-fit:contain}.linked-info h2{font-size:1.15rem}}
+  </style>
+</head>
+<body>
+  <header class="header"><div class="header-inner"><a class="back" href="sku.html">← ค้นรหัสสินค้า</a><span class="brand">PANISA</span></div></header>
+  <main>
+    <div class="heading"><div><h1>รูปของฉัน · เลือกคัดลอกรหัส</h1><p>รูปเดียว เลือกได้ทั้งรหัสเซต เสื้อ และกระโปรง</p></div></div>
+    <div class="controls"><label class="search"><span>ค้นรูปด้วยชื่อ แท็ก หรือรหัสสินค้า</span><input id="search" type="search" placeholder="เช่น กาแลน, กระโปรงยาว, pg09-เสื้อ-ดำ" autocomplete="off"></label></div>
+    <div class="results-line"><span id="count" role="status">กำลังโหลดรูป…</span><span>ไม่รวมไซซ์ · เลือกไซซ์เพิ่มได้</span></div>
+    <div id="photos" class="photo-list"></div>
+    <section id="empty" class="empty" hidden><h2>ไม่พบรูปที่ตรงกับคำค้น</h2><button id="clear" type="button">ล้างคำค้น</button></section>
+    <section id="error" class="empty" hidden><h2>โหลดข้อมูลไม่สำเร็จ</h2><button id="retry" type="button">ลองอีกครั้ง</button></section>
+    <footer>รหัสเริ่มต้นใช้สำหรับอ้างอิงแบบและสี เลือกไซซ์เพื่อคัดลอก SKU Merchant เต็ม<br>อ้างอิงรายการ BigSeller วันที่ 14 ก.ย. 2569</footer>
+  </main>
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <script type="module" src="photos.js?v=20260914-1"></script>
+</body>
+</html>

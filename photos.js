@@ -30,7 +30,7 @@ async function copy(input) {
 function codeRow(link, id) {
   const product = products.get(link.code);
   const row = node('section', '', 'linked-code');
-  const shortLabel = link.label.startsWith('เซต') ? 'เซต' : link.label;
+  const shortLabel = link.shortLabel || (link.label.startsWith('เซต') ? 'เซต' : link.label);
   const title = node('h3', shortLabel);
   const input = node('input', '', 'code'); input.readOnly = true; input.spellcheck = false;
   input.id = id; input.value = link.code;
@@ -63,18 +63,21 @@ function photoCard(photo) {
   const article = node('article', '', 'linked-photo'); article.id = photo.id;
   const figure = node('figure', '', 'linked-image'); const image = node('img');
   image.src = new URL(photo.file, location.href).href; image.alt = photo.title;
-  image.width = 768; image.height = 1152;
+  image.width = photo.width || 768; image.height = photo.height || 1152;
+  image.loading = 'lazy'; image.decoding = 'async';
   image.addEventListener('error', () => { image.hidden = true; figure.prepend(node('p', 'โหลดรูปไม่สำเร็จ กรุณาลองใหม่')); });
-  figure.append(image, node('figcaption', `ชื่อไฟล์เดิม: ${photo.file}`));
+  figure.append(image, node('figcaption', photo.sourceLabel || `ชื่อไฟล์เดิม: ${photo.file}`));
   const info = node('div', '', 'linked-info'); const tags = node('div', '', 'photo-tags');
-  for (const tag of photo.tags) {
+  for (const tag of photo.tags.filter(tag => !['กาแลนด์', 'pg09', 'รูปทางการ', 'รูปรีวิว', 'รูปสินค้า'].includes(tag))) {
     const button = node('button', tag, 'tag-chip'); button.type = 'button';
     button.addEventListener('click', () => { el('search').value = tag; render(); el('search').focus(); });
     tags.append(button);
   }
   const codes = node('div', '', 'linked-codes');
   photo.products.forEach((link, i) => codes.append(codeRow(link, `${photo.id}-${i}`)));
-  info.append(node('h2', photo.title), tags, node('p', 'กดไซส์ = คัดลอกรหัสทันที', 'help'), codes);
+  info.append(node('h2', photo.title), tags);
+  if (photo.note) info.append(node('p', photo.note, 'help'));
+  info.append(node('p', 'กดไซส์ = คัดลอกรหัสทันที', 'help'), codes);
   article.append(figure, info); return article;
 }
 function render() {

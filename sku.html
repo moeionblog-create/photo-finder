@@ -6,7 +6,7 @@
   <meta name="description" content="ค้นสินค้าจากรูป คัดลอกรหัสรุ่นและสี หรือเลือกไซซ์เพื่อคัดลอก SKU Merchant เต็ม">
   <title>ค้นรหัสสินค้า — คลังรูปสินค้า</title>
   <link rel="icon" href="chihuahua-web-icon-v2.png">
-  <link rel="stylesheet" href="sku.css">
+  <link rel="stylesheet" href="sku.css?v=20260914-tags">
 </head>
 <body>
   <header class="header">
@@ -24,13 +24,18 @@
       <label class="search"><span>ค้นหาสินค้า</span><input type="search" id="search" placeholder="ชื่อชุด สี หรือรหัส เช่น กาแลน, pg09, เดรสฝ้าย" autocomplete="off"></label>
       <label class="scope"><span>แสดงสินค้า</span><select id="scope"><option value="panisa">ผ้าไทย / PANISA</option><option value="all">สินค้าทั้งหมด</option></select></label>
     </div>
+    <section class="tag-filters" aria-label="กรองด้วยแท็ก" id="tag-filters" hidden>
+      <div class="tag-filter-row"><span id="type-label">ประเภท</span><div class="tag-options" id="type-tags" role="group" aria-labelledby="type-label"></div></div>
+      <div class="tag-filter-row"><span id="color-label">สี</span><div class="tag-options" id="color-tags" role="group" aria-labelledby="color-label"></div></div>
+      <div class="filter-summary"><span id="selected-tags" role="status">เลือกประเภทและสีร่วมกันได้</span><button type="button" id="clear-tags" hidden>ล้างแท็ก</button></div>
+    </section>
     <div class="results-line"><span id="count" role="status">กำลังโหลดสินค้า…</span><span>รหัสเริ่มต้นไม่รวมไซซ์</span></div>
     <div id="catalog" class="catalog" aria-label="รายการสินค้า"></div>
-    <section id="empty" class="empty" hidden><h2>ไม่พบสินค้า</h2><p>ลองค้นด้วยชื่อ สี หรือเปลี่ยนเป็นสินค้าทั้งหมด</p><button id="reset" type="button">ล้างการค้นหา</button></section>
+    <section id="empty" class="empty" hidden><h2>ไม่พบสินค้า</h2><p>ลองเปลี่ยนแท็ก คำค้น หรือเลือกสินค้าทั้งหมด</p><button id="reset" type="button">ล้างคำค้นและแท็ก</button></section>
     <section id="error" class="empty" hidden><h2>โหลดรายการสินค้าไม่สำเร็จ</h2><p>ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง</p><button id="retry" type="button">ลองอีกครั้ง</button></section>
     <footer>รหัสไม่รวมไซซ์ใช้สำหรับอ้างอิงแบบและสี เมื่อเลือกไซซ์จะคัดลอก SKU Merchant เต็มตาม BigSeller<br>รายการนี้เป็นข้อมูล ณ วันที่ระบุ ไม่ใช่จำนวนสต็อกปัจจุบัน</footer>
   </main>
   <div id="notice" role="status" aria-live="polite" class="notice"></div>
-  <script type="module" src="sku.js"></script>
+  <script type="module" src="sku.js?v=20260914-tags"></script>
 </body>
 </html>

@@ -1,8 +1,42 @@
+import { TYPES, COLORS, productTags, matchesTags } from './sku-tags.mjs?v=20260914-tags';
 const el = id => document.getElementById(id);
 const catalog = el('catalog');
 let data;
 let noticeTimer;
+let selectedType = '';
+let selectedColor = '';
+let tagsByCode = new Map();
 const normalize = s => String(s || '').normalize('NFC').toLocaleLowerCase('th');
+function tagButton(text, selected, onClick) {
+  const button = document.createElement('button'); button.type = 'button';
+  button.className = 'tag-chip'; button.textContent = text;
+  button.setAttribute('aria-pressed', String(selected));
+  button.addEventListener('click', onClick); return button;
+}
+function selectTag(kind, value) {
+  if (kind === 'type') selectedType = selectedType === value ? '' : value;
+  else selectedColor = selectedColor === value ? '' : value;
+  renderTagFilters(); render();
+  // Keep keyboard focus on the chosen filter after rebuilding its row.
+  const target = el(kind === 'type' ? 'type-tags' : 'color-tags');
+  [...target.children].find(button => button.textContent === (value || 'ทั้งหมด'))?.focus({preventScroll:true});
+}
+function renderTagFilters() {
+  if (!data) return;
+  const scoped = data.products.filter(p => el('scope').value === 'all' || p.panisa);
+  const available = scoped.map(p => tagsByCode.get(p.code));
+  const types = TYPES.filter(t => available.some(tags => tags.type === t));
+  const colors = COLORS.filter(c => available.some(tags => tags.colors.includes(c)));
+  if (!types.includes(selectedType)) selectedType = '';
+  if (!colors.includes(selectedColor)) selectedColor = '';
+  for (const [id, values, kind, selected] of [['type-tags', types, 'type', selectedType], ['color-tags', colors, 'color', selectedColor]]) {
+    el(id).replaceChildren(tagButton('ทั้งหมด', !selected, () => selectTag(kind, '')), ...values.map(value => tagButton(value, selected === value, () => selectTag(kind, value))));
+  }
+  el('tag-filters').hidden = false;
+  const selected = [selectedType, selectedColor].filter(Boolean);
+  el('selected-tags').textContent = selected.length ? `กำลังแสดง: ${selected.join(' + ')}` : 'เลือกประเภทและสีร่วมกันได้';
+  el('clear-tags').hidden = !selected.length;
+}
 function notify(message) {
   clearTimeout(noticeTimer);
   el('notice').textContent = message;
@@ -35,6 +69,11 @@ function makeCard(product, index) {
   catch { image.hidden = true; card.querySelector('.photo-error').hidden = false; }
   card.querySelector('h2').textContent = product.code;
   const body = card.querySelector('.product-body');
+  const tags = tagsByCode.get(product.code);
+  const badges = document.createElement('div'); badges.className = 'product-tags'; badges.setAttribute('aria-label', 'แท็กสินค้า');
+  if (tags.type) badges.append(tagButton(tags.type, selectedType === tags.type, () => selectTag('type', tags.type)));
+  for (const color of tags.colors) badges.append(tagButton(color, selectedColor === color, () => selectTag('color', color)));
+  if (badges.childElementCount) body.querySelector('h2').after(badges);
   const input = card.querySelector('.code'); input.id = `code-${index}`; input.value = product.code;
   const label = card.querySelector('.code-label'); label.htmlFor = input.id;
   const hasSizes = product.variants.some(v => v.size);
@@ -69,7 +108,10 @@ function render() {
   // Common name used by the owner for Galant / PG09.
   query = query.replace(/กาแลน(?:ด์|ด|ท์)?|galant/g, 'pg09');
   const words = query.split(/\s+/).filter(Boolean);
-  const filtered = data.products.filter(p => (el('scope').value === 'all' || p.panisa) && words.every(w => normalize([p.code, p.name, ...p.variants.map(v => v.sku)].join(' ')).includes(w)));
+  const filtered = data.products.filter(p => {
+    const tags = tagsByCode.get(p.code);
+    return (el('scope').value === 'all' || p.panisa) && matchesTags(tags, selectedType, selectedColor) && words.every(w => normalize([p.code, p.name, tags.type, ...tags.colors, ...p.variants.map(v => v.sku)].join(' ')).includes(w));
+  });
   catalog.replaceChildren(...filtered.map(makeCard));
   el('empty').hidden = filtered.length !== 0;
   const skuCount = filtered.reduce((sum, p) => sum + p.variants.length, 0);
@@ -83,12 +125,14 @@ async function load() {
     if (!response.ok) throw new Error('load');
     data = await response.json();
     if (!Array.isArray(data.products)) throw new Error('format');
+    tagsByCode = new Map(data.products.map(p => [p.code, productTags(p)]));
     el('source').textContent = `BigSeller · ข้อมูล ${new Intl.DateTimeFormat('th-TH', {day:'numeric',month:'short',year:'numeric'}).format(new Date(data.updated + 'T00:00:00+07:00'))}`;
-    render();
-  } catch { data = null; catalog.replaceChildren(); el('error').hidden = false; el('count').textContent = 'ยังโหลดข้อมูลไม่ได้'; }
+    renderTagFilters(); render();
+  } catch { data = null; catalog.replaceChildren(); el('tag-filters').hidden = true; el('error').hidden = false; el('count').textContent = 'ยังโหลดข้อมูลไม่ได้'; }
 }
 el('search').addEventListener('input', render);
-el('scope').addEventListener('change', render);
-el('reset').addEventListener('click', () => { el('search').value = ''; render(); el('search').focus(); });
+el('scope').addEventListener('change', () => { renderTagFilters(); render(); });
+el('clear-tags').addEventListener('click', () => { selectedType = ''; selectedColor = ''; renderTagFilters(); render(); el('type-tags').firstElementChild.focus({preventScroll:true}); });
+el('reset').addEventListener('click', () => { el('search').value = ''; selectedType = ''; selectedColor = ''; renderTagFilters(); render(); el('search').focus(); });
 el('retry').addEventListener('click', load);
 load();

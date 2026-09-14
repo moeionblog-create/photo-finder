@@ -30,27 +30,32 @@ async function copy(input) {
 function codeRow(link, id) {
   const product = products.get(link.code);
   const row = node('section', '', 'linked-code');
-  const title = node('h3', link.label);
-  const label = node('label', 'รหัสแบบ / สี (ไม่รวมไซซ์)', 'code-label');
+  const shortLabel = link.label.startsWith('เซต') ? 'เซต' : link.label;
+  const title = node('h3', shortLabel);
   const input = node('input', '', 'code'); input.readOnly = true; input.spellcheck = false;
-  input.id = id; input.value = link.code; label.htmlFor = id;
-  const button = node('button', `คัดลอกรหัส${link.label}`, 'copy'); button.type = 'button';
+  input.id = id; input.value = link.code;
+  input.setAttribute('aria-label', `รหัส${shortLabel}`);
+  const button = node('button', 'คัดลอก', 'copy'); button.type = 'button';
+  button.setAttribute('aria-label', `คัดลอกรหัส${shortLabel}`);
   button.addEventListener('click', () => copy(input));
-  row.append(title, label, input, button);
+  const copyRow = node('div', '', 'quick-copy'); copyRow.append(input, button);
+  row.append(title, copyRow);
   if (product.variants.some(v => v.size)) {
-    const details = node('details'); const summary = node('summary', 'เลือกไซซ์เพิ่มเติม');
-    const sizeLabel = node('label', `ไซซ์ · ${link.label}`); sizeLabel.htmlFor = `${id}-size`;
-    const select = node('select'); select.id = sizeLabel.htmlFor;
-    select.add(new Option('ไม่รวมไซซ์', ''));
-    product.variants.forEach((v, i) => select.add(new Option(v.size ? v.size.toUpperCase() : 'ไม่ระบุไซซ์', String(i))));
-    select.addEventListener('change', () => {
-      const variant = select.value === '' ? null : product.variants[Number(select.value)];
-      input.value = variant ? variant.sku : link.code;
-      label.textContent = variant ? 'SKU Merchant พร้อมไซซ์' : 'รหัสแบบ / สี (ไม่รวมไซซ์)';
-      button.textContent = `คัดลอก${variant ? 'พร้อมไซซ์' : 'รหัส'}${link.label}`;
-      summary.textContent = variant ? `ไซซ์ ${variant.size?.toUpperCase() || 'ไม่ระบุ'} · เปลี่ยนได้` : 'เลือกไซซ์เพิ่มเติม';
+    const sizes = node('div', '', 'size-buttons');
+    sizes.setAttribute('role', 'group'); sizes.setAttribute('aria-label', `ไซส์${shortLabel} — กดเพื่อคัดลอก`);
+    const options = [{text:'ไม่รวมไซส์', sku:link.code}, ...product.variants.map(v => ({text:v.size ? v.size.toUpperCase() : 'ไม่ระบุ', sku:v.sku}))];
+    options.forEach((option, i) => {
+      const sizeButton = node('button', option.text); sizeButton.type = 'button';
+      sizeButton.setAttribute('aria-pressed', String(i === 0));
+      sizeButton.setAttribute('aria-label', `${shortLabel} ${option.text} — คัดลอกรหัส`);
+      sizeButton.addEventListener('click', () => {
+        input.value = option.sku;
+        for (const other of sizes.children) other.setAttribute('aria-pressed', String(other === sizeButton));
+        copy(input);
+      });
+      sizes.append(sizeButton);
     });
-    details.append(summary, sizeLabel, select); row.append(details);
+    row.append(sizes);
   }
   return row;
 }
@@ -69,7 +74,7 @@ function photoCard(photo) {
   }
   const codes = node('div', '', 'linked-codes');
   photo.products.forEach((link, i) => codes.append(codeRow(link, `${photo.id}-${i}`)));
-  info.append(node('h2', photo.title), tags, node('p', 'ต้องการพูดถึงสินค้าชิ้นไหน กดคัดลอกรหัสชิ้นนั้นได้เลยค่ะ', 'help'), codes);
+  info.append(node('h2', photo.title), tags, node('p', 'กดไซส์ = คัดลอกรหัสทันที', 'help'), codes);
   article.append(figure, info); return article;
 }
 function render() {

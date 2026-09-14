@@ -661,7 +661,7 @@
       <div class="img-tile" draggable="${selectMode ? 'false' : 'true'}" data-tile-idx="${i}">
         <div class="img-thumb-wrap">
           ${selectMode ? `<label class="sel-checkbox"><input type="checkbox" data-sel="${i}" ${selectedIdxs.has(i)?'checked':''}/></label>` : ''}
-          <img src="${im.dataUrl}" data-idx="${i}"/>
+          <img src="${im.dataUrl}" data-idx="${i}" data-image-id="${esc(im.id)}"/>
         </div>
         ${isMerchant ? `
         <div class="sku-field-row">
@@ -925,5 +925,6 @@
   })();
 })();
 </script>
+<script type="module" src="gallery-sku.js?v=20260914-1"></script>
 </body>
 </html>

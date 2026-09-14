@@ -1,4 +1,9 @@
 const el = id => document.getElementById(id);
+const pageOptions = new URLSearchParams(location.search);
+document.documentElement.classList.toggle('embedded', pageOptions.get('embed') === '1');
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && pageOptions.get('embed') === '1' && parent !== window) parent.postMessage('close-photo-codes', location.origin);
+});
 const normalize = value => String(value).normalize('NFC').toLocaleLowerCase('th');
 let photos = [], products = new Map(), noticeTimer;
 function node(tag, text, className) {
@@ -84,7 +89,7 @@ async function load() {
     if (responses.some(r => !r.ok)) throw new Error('load');
     const [links, catalog] = await Promise.all(responses.map(r => r.json()));
     products = new Map(catalog.products.map(p => [p.code, p]));
-    photos = links.photos;
+    photos = links.photos.filter(photo => !pageOptions.has('photo') || photo.id === pageOptions.get('photo'));
     if (photos.some(p => p.products.some(link => !products.has(link.code)))) throw new Error('unknown code');
     render();
   } catch { el('photos').replaceChildren(); el('error').hidden = false; el('count').textContent = 'ยังโหลดข้อมูลไม่ได้'; }

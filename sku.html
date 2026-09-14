@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ค้นสินค้าจากรูป คัดลอกรหัสรุ่นและสี หรือเลือกไซซ์เพื่อคัดลอก SKU Merchant เต็ม">
+  <title>ค้นรหัสสินค้า — คลังรูปสินค้า</title>
+  <link rel="icon" href="chihuahua-web-icon-v2.png">
+  <link rel="stylesheet" href="sku.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="back">← คลังรูปสินค้า</a>
+      <span class="brand">PANISA</span>
+    </div>
+  </header>
+  <main>
+    <div class="heading">
+      <div><h1>ค้นรูป คัดลอกรหัส</h1><p>หนึ่งรูปต่อแบบและสี · เลือกไซซ์เพิ่มได้</p></div>
+      <span class="source" id="source">ข้อมูลจาก BigSeller</span>
+    </div>
+    <div class="controls">
+      <label class="search"><span>ค้นหาสินค้า</span><input type="search" id="search" placeholder="ชื่อชุด สี หรือรหัส เช่น กาแลน, pg09, เดรสฝ้าย" autocomplete="off"></label>
+      <label class="scope"><span>แสดงสินค้า</span><select id="scope"><option value="panisa">ผ้าไทย / PANISA</option><option value="all">สินค้าทั้งหมด</option></select></label>
+    </div>
+    <div class="results-line"><span id="count" role="status">กำลังโหลดสินค้า…</span><span>รหัสเริ่มต้นไม่รวมไซซ์</span></div>
+    <div id="catalog" class="catalog" aria-label="รายการสินค้า"></div>
+    <section id="empty" class="empty" hidden><h2>ไม่พบสินค้า</h2><p>ลองค้นด้วยชื่อ สี หรือเปลี่ยนเป็นสินค้าทั้งหมด</p><button id="reset" type="button">ล้างการค้นหา</button></section>
+    <section id="error" class="empty" hidden><h2>โหลดรายการสินค้าไม่สำเร็จ</h2><p>ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง</p><button id="retry" type="button">ลองอีกครั้ง</button></section>
+    <footer>รหัสไม่รวมไซซ์ใช้สำหรับอ้างอิงแบบและสี เมื่อเลือกไซซ์จะคัดลอก SKU Merchant เต็มตาม BigSeller<br>รายการนี้เป็นข้อมูล ณ วันที่ระบุ ไม่ใช่จำนวนสต็อกปัจจุบัน</footer>
+  </main>
+  <div id="notice" role="status" aria-live="polite" class="notice"></div>
+  <script type="module" src="sku.js"></script>
+</body>
+</html>

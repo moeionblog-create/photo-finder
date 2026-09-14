@@ -1,7 +1,7 @@
 // Match the stable gallery image ID, independent of its position or filename.
 const body = document.getElementById('tab-body');
 const style = document.createElement('style');
-style.textContent = `.gallery-sku-button{width:calc(100% - 16px);margin:0 8px 8px;padding:9px 6px;border:1px solid #3f6259;border-radius:7px;background:#eff5ef;color:#2c4741;font:600 13px Tahoma,sans-serif;cursor:pointer}.sku-dialog{width:min(1100px,96vw);max-width:96vw;padding:0;border:0;border-radius:14px;background:#faf6f1;box-shadow:0 15px 60px #0005}.sku-dialog::backdrop{background:#14120ebd}.sku-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px}.sku-dialog-head h2{font-size:17px;margin:0}.sku-dialog-head button{padding:8px 14px;cursor:pointer;background:white;border:1px solid #d8cebe;border-radius:8px;font:inherit}.sku-dialog iframe{display:block;width:100%;height:80vh;height:80dvh;border:0}.sku-dialog button:focus-visible{outline:3px solid #bf872c;outline-offset:2px}`;
+style.textContent = `.gallery-sku-mark{position:absolute;right:7px;top:7px;display:flex;align-items:center;gap:3px;padding:4px 6px;border-radius:6px;background:#ffffffe6;color:#2c4741;box-shadow:0 1px 4px #0002;font:600 11px Tahoma,sans-serif;pointer-events:none}.gallery-sku-mark svg{width:13px;height:13px}.sku-dialog{width:min(1100px,96vw);max-width:96vw;padding:0;border:0;border-radius:14px;background:#faf6f1;box-shadow:0 15px 60px #0005}.sku-dialog::backdrop{background:#14120ebd}.sku-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px}.sku-dialog-head h2{font-size:17px;margin:0}.sku-dialog-head button{padding:8px 14px;cursor:pointer;background:white;border:1px solid #d8cebe;border-radius:8px;font:inherit}.sku-dialog iframe{display:block;width:100%;height:80vh;height:80dvh;border:0}.sku-dialog button:focus-visible{outline:3px solid #bf872c;outline-offset:2px}`;
 document.head.append(style);
 let mappings = new Map();
 function openPhoto(photo) {
@@ -26,13 +26,16 @@ function decorate() {
     const photo = mappings.get(image.dataset.imageId);
     if (!photo) continue;
     const tile = image.closest('.img-tile');
-    if (tile.querySelector('.gallery-sku-button')) continue;
+    if (tile.querySelector('.gallery-sku-mark')) continue;
     image.tabIndex = 0; image.setAttribute('role', 'button');
     image.setAttribute('aria-label', `เลือกรหัส ${photo.title}`);
     image.style.cursor = 'pointer';
-    const button = document.createElement('button'); button.type = 'button'; button.className = 'gallery-sku-button';
-    button.textContent = `เลือกรหัสในรูปนี้ (${photo.products.length})`;
-    button.addEventListener('click', () => openPhoto(photo)); tile.append(button);
+    image.title = `กดรูปเพื่อเลือกรหัสสินค้า (${photo.products.length})`;
+    const mark = document.createElement('span'); mark.className = 'gallery-sku-mark';
+    mark.setAttribute('aria-hidden', 'true');
+    mark.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h8l10 10-8 8L3 11Z"/><circle cx="7.5" cy="7.5" r="1"/></svg>';
+    mark.append(document.createTextNode(String(photo.products.length)));
+    image.closest('.img-thumb-wrap').append(mark);
   }
 }
 function activate(event) {

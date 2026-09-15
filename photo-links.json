@@ -6271,6 +6271,581 @@
           "shortLabel": "กระโปรงยาว · ps07"
         }
       ]
+    },
+    {
+      "id": "silk-official-01",
+      "galleryImageId": "b1651671-e977-420f-8124-9e51966d7261",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa6f8becf-1842-4fa0-a0e9-86dfe479c065.mage",
+      "sourceLabel": "รูปทางการ 01",
+      "category": "official",
+      "width": 1100,
+      "height": 1095,
+      "title": "ไหมเทียม · เสื้อจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "silk-official-02",
+      "galleryImageId": "42586809-961f-4b88-a134-f531d886da9b",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Feb46b79c-f528-4f00-90a8-893e4f7f6644.mage",
+      "sourceLabel": "รูปทางการ 02",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ไหมเทียม · ตารางไซส์",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ],
+      "note": "ข้อมูลร่วมชุดจิตรลดาและเรือนต้น · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "silk-official-03",
+      "galleryImageId": "b5bafc48-4642-482d-b5bd-cf093fb8be16",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F6af6d4ba-d6d3-4513-8183-6e86df4d2495.mage",
+      "sourceLabel": "รูปทางการ 03",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ไหมเทียม · เนื้อผ้า",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ],
+      "note": "ข้อมูลร่วมชุดจิตรลดาและเรือนต้น · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "silk-official-04",
+      "galleryImageId": "34fca4fd-fc8b-4cc0-9dfc-08fecaa7f826",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F717de28a-4e6d-4562-8eb3-89df01b98047.mage",
+      "sourceLabel": "รูปทางการ 04",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ไหมเทียม · รวมแบบ · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-05",
+      "galleryImageId": "99f0d42b-1270-4c60-9a72-4ddcdc68770a",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F6df145cd-58ee-4782-ac36-66023be24801.mage",
+      "sourceLabel": "รูปทางการ 05",
+      "category": "official",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-06",
+      "galleryImageId": "4f5446bb-c786-46de-aa92-f789ea5e2a3c",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F02f4516a-a49f-41d3-8a16-31231a33da39.mage",
+      "sourceLabel": "รูปทางการ 06",
+      "category": "official",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-07",
+      "galleryImageId": "b4e4e282-4352-4457-8a9d-09f297276517",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F0296ed0d-eac5-4427-8ec5-e5dac3567d00.mage",
+      "sourceLabel": "รูปทางการ 07",
+      "category": "official",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-08",
+      "galleryImageId": "ac571c4f-3ef7-48f2-962f-76acd760d99d",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fd75d7745-fd1d-40b2-9b1e-8bf3b730c5f2.mage",
+      "sourceLabel": "รูปทางการ 08",
+      "category": "official",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดเรือนต้น · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-09",
+      "galleryImageId": "055054ba-3e04-4244-8a4e-5bafa30f1122",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F6d8d3dce-7e6c-423a-ac1f-2a92e1bab9fa.mage",
+      "sourceLabel": "รูปทางการ 09",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ไหมเทียม · เสื้อเรือนต้น · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "เรือนต้น",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "silk-official-10",
+      "galleryImageId": "d5f209d2-6cb9-4df7-8ef8-440fa0aa8cea",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F72d1f083-3bf6-4373-90d2-18073b802851.mage",
+      "sourceLabel": "รูปทางการ 10",
+      "category": "official",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดเรือนต้น · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-official-11",
+      "galleryImageId": "b88d4876-8288-43f2-80be-4e3ffc748fc9",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F32f9f38b-b0f1-49e8-a9e3-d2549d01284a.mage",
+      "sourceLabel": "รูปทางการ 11",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ไหมเทียม · รวมแบบ · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-merchant-01",
+      "galleryImageId": "1ca3fd77-8c3e-4408-bab8-ea20321859d6",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F4eedd70b-b61a-416b-90e4-50c5335c16a5.mage",
+      "sourceLabel": "รูปสินค้า 01",
+      "category": "merchant",
+      "width": 600,
+      "height": 900,
+      "title": "ไหมเทียม · เสื้อจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        }
+      ]
+    },
+    {
+      "id": "silk-merchant-02",
+      "galleryImageId": "64d55c99-9a9d-4abe-841c-d89d32d9ff43",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F1b2b3de2-1009-4688-9a5a-9bf1a069c131.mage",
+      "sourceLabel": "รูปสินค้า 02",
+      "category": "merchant",
+      "width": 600,
+      "height": 900,
+      "title": "ไหมเทียม · ผ้าถุงสำเร็จ · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-merchant-03",
+      "galleryImageId": "f5e02f4d-ee7b-4c85-98b0-450c9b6e752d",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F103ef2f6-24f3-4c3d-9e78-5dc558885bff.mage",
+      "sourceLabel": "รูปสินค้า 03",
+      "category": "merchant",
+      "width": 600,
+      "height": 900,
+      "title": "ไหมเทียม · เสื้อเรือนต้น · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "เรือนต้น",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        }
+      ]
+    },
+    {
+      "id": "silk-merchant-04",
+      "galleryImageId": "f73aee1f-500a-4ee9-88a9-0de7fc73d1c0",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F6e2294e9-6753-46dd-aa67-2e138acb2dd9.mage",
+      "sourceLabel": "รูปสินค้า 04",
+      "category": "merchant",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดจิตรลดา · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "จิตรลดา",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-จิตรลดา-เซต-ดำ",
+          "label": "เซตจิตรลดา",
+          "shortLabel": "เซตจิตรลดา"
+        },
+        {
+          "code": "pt-จิตรลดา-เสื้อ-ดำ",
+          "label": "เสื้อจิตรลดา",
+          "shortLabel": "เสื้อจิตรลดา"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
+    },
+    {
+      "id": "silk-merchant-05",
+      "galleryImageId": "6b0f3646-0d8b-4e86-b7b0-5bc159c24760",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fae07c97e-1f1b-4e67-ad66-1a35a88905e1.mage",
+      "sourceLabel": "รูปสินค้า 05",
+      "category": "merchant",
+      "width": 618,
+      "height": 1100,
+      "title": "ไหมเทียม · ชุดเรือนต้น · ดำ",
+      "tags": [
+        "ไหมเทียม",
+        "สีดำ",
+        "เรือนต้น",
+        "เสื้อ",
+        "เซต",
+        "ผ้าถุง",
+        "ผ้าถุงสำเร็จ",
+        "กระโปรง"
+      ],
+      "products": [
+        {
+          "code": "pt-เรือนต้น-เซต-ดำ",
+          "label": "เซตเรือนต้น",
+          "shortLabel": "เซตเรือนต้น"
+        },
+        {
+          "code": "pt-เรือนต้น-เสื้อ-ดำ",
+          "label": "เสื้อเรือนต้น",
+          "shortLabel": "เสื้อเรือนต้น"
+        },
+        {
+          "code": "pt-ผ้าถุงสำเร็จ-ดำ",
+          "label": "ผ้าถุงสำเร็จ",
+          "shortLabel": "ผ้าถุงสำเร็จ"
+        }
+      ]
     }
   ]
 }

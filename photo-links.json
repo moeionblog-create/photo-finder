@@ -4595,6 +4595,1682 @@
           "code": "ดด001-เดรสฝ้าย-ดำ"
         }
       ]
+    },
+    {
+      "id": "blue-official-01",
+      "galleryImageId": "be9adc68-f3ed-4a49-b7c2-42006ea01fb2",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F02e27bce-bf4c-4892-a593-52dbb760a5c1.mage",
+      "sourceLabel": "รูปทางการ 01",
+      "category": "official",
+      "width": 1100,
+      "height": 733,
+      "title": "รวมฟ้า · ps06 / ps07 / p05 · รวมแบบ",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "ps07",
+        "p05",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        },
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps07",
+          "shortLabel": "เซตสอบ · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว · ps07",
+          "shortLabel": "เซตยาว · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน · ps07",
+          "shortLabel": "เซตบาน · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงสอบ",
+          "label": "เซตคอกลม · สอบ · p05",
+          "shortLabel": "เซตคอกลม · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงยาว",
+          "label": "เซตคอกลม · ยาว · p05",
+          "shortLabel": "เซตคอกลม · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงบาน",
+          "label": "เซตคอกลม · บาน · p05",
+          "shortLabel": "เซตคอกลม · บาน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงสอบ",
+          "label": "เซตคอจีน · สอบ · p05",
+          "shortLabel": "เซตคอจีน · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงบาน",
+          "label": "เซตคอจีน · บาน · p05",
+          "shortLabel": "เซตคอจีน · บาน · p05"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-02",
+      "galleryImageId": "7c597116-f8c1-44f8-920b-3fa8f406c77b",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F88da130d-3135-447d-b637-4cc9e66d8053.mage",
+      "sourceLabel": "รูปทางการ 02",
+      "category": "official",
+      "width": 600,
+      "height": 900,
+      "title": "รวมฟ้า · ps07 · รวมแบบ",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps07",
+          "shortLabel": "เซตสอบ · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว · ps07",
+          "shortLabel": "เซตยาว · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน · ps07",
+          "shortLabel": "เซตบาน · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-03",
+      "galleryImageId": "5542fa22-9414-4c01-9793-7ef7fd5ed293",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff1c804b6-a7a9-48f5-ad8f-c986488dcbb6.mage",
+      "sourceLabel": "รูปทางการ 03",
+      "category": "official",
+      "width": 600,
+      "height": 900,
+      "title": "รวมฟ้า · p05 · รวมแบบ",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงสอบ",
+          "label": "เซตคอกลม · สอบ · p05",
+          "shortLabel": "เซตคอกลม · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงยาว",
+          "label": "เซตคอกลม · ยาว · p05",
+          "shortLabel": "เซตคอกลม · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงบาน",
+          "label": "เซตคอกลม · บาน · p05",
+          "shortLabel": "เซตคอกลม · บาน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงสอบ",
+          "label": "เซตคอจีน · สอบ · p05",
+          "shortLabel": "เซตคอจีน · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงบาน",
+          "label": "เซตคอจีน · บาน · p05",
+          "shortLabel": "เซตคอจีน · บาน · p05"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-04",
+      "galleryImageId": "c3203720-a5c7-4e7b-b3cb-7f90629c6ac6",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fdae0994a-980b-4fa6-af94-999247010771.mage",
+      "sourceLabel": "รูปทางการ 04",
+      "category": "official",
+      "width": 600,
+      "height": 900,
+      "title": "รวมฟ้า · ps06 · รวมแบบ",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-05",
+      "galleryImageId": "5151c5b9-eb9d-404c-b0f3-60ab86cd9e44",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fce4168d2-a13d-47d4-bae3-0c4f03bfcc69.mage",
+      "sourceLabel": "รูปทางการ 05",
+      "category": "official",
+      "width": 622,
+      "height": 1100,
+      "title": "รวมฟ้า · ps06 · เนื้อผ้า",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-06",
+      "galleryImageId": "8934365e-0ef6-4274-8398-251537e60ced",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fe333e2ce-8353-4b63-8833-3ee0d95896b9.mage",
+      "sourceLabel": "รูปทางการ 06",
+      "category": "official",
+      "width": 644,
+      "height": 1100,
+      "title": "รวมฟ้า · p05 · เนื้อผ้า",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงสอบ",
+          "label": "เซตคอกลม · สอบ · p05",
+          "shortLabel": "เซตคอกลม · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงยาว",
+          "label": "เซตคอกลม · ยาว · p05",
+          "shortLabel": "เซตคอกลม · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงบาน",
+          "label": "เซตคอกลม · บาน · p05",
+          "shortLabel": "เซตคอกลม · บาน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงสอบ",
+          "label": "เซตคอจีน · สอบ · p05",
+          "shortLabel": "เซตคอจีน · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงบาน",
+          "label": "เซตคอจีน · บาน · p05",
+          "shortLabel": "เซตคอจีน · บาน · p05"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-07",
+      "galleryImageId": "c0c89606-7ed7-400d-9b3d-b6004223df2c",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb3dce4e2-ecf6-4a72-83c7-01c576210bb0.mage",
+      "sourceLabel": "รูปทางการ 07",
+      "category": "official",
+      "width": 506,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07 · เนื้อผ้า",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps07",
+          "shortLabel": "เซตสอบ · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว · ps07",
+          "shortLabel": "เซตยาว · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน · ps07",
+          "shortLabel": "เซตบาน · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-08",
+      "galleryImageId": "8f125673-94f7-49ea-89f1-82c6b65d06e5",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fec8b3ef4-bc9c-434e-b938-18fd93bf592f.mage",
+      "sourceLabel": "รูปทางการ 08",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05 · ตารางไซส์",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงสอบ",
+          "label": "เซตคอกลม · สอบ · p05",
+          "shortLabel": "เซตคอกลม · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงยาว",
+          "label": "เซตคอกลม · ยาว · p05",
+          "shortLabel": "เซตคอกลม · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม+โปรงบาน",
+          "label": "เซตคอกลม · บาน · p05",
+          "shortLabel": "เซตคอกลม · บาน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงสอบ",
+          "label": "เซตคอจีน · สอบ · p05",
+          "shortLabel": "เซตคอจีน · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน+โปรงบาน",
+          "label": "เซตคอจีน · บาน · p05",
+          "shortLabel": "เซตคอจีน · บาน · p05"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-09",
+      "galleryImageId": "28836c40-0b2d-4ca1-a00a-fb13480e6777",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa428087b-26a6-4144-a553-a5bef504c4af.mage",
+      "sourceLabel": "รูปทางการ 09",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07 · ตารางไซส์",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps07",
+          "shortLabel": "เซตสอบ · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว · ps07",
+          "shortLabel": "เซตยาว · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน · ps07",
+          "shortLabel": "เซตบาน · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-10",
+      "galleryImageId": "2059778f-5515-4e7f-af3d-f774e9a2091e",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fcd05b591-0882-4482-bb5b-8abd1b54c5ed.mage",
+      "sourceLabel": "รูปทางการ 10",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · ps06 · ตารางไซส์",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-official-11",
+      "galleryImageId": "1f828872-5644-42c7-bb0a-cb50d607d85c",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F84b62c28-6a57-4c7d-ab37-e90e869ec8d8.mage",
+      "sourceLabel": "รูปทางการ 11",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-official-12",
+      "galleryImageId": "96761de4-6e07-4e61-beb2-77fbef2fd35f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa08727a1-fafc-4e66-ae10-8e7cd65d6810.mage",
+      "sourceLabel": "รูปทางการ 12",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · ps06 · เนื้อผ้า",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-merchant-01",
+      "galleryImageId": "829c3015-66fa-4e3f-93d3-ab27100435dc",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fe1205ad9-611f-4ef3-a809-67a6e8835230.mage",
+      "sourceLabel": "รูปสินค้า 01",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "blue-merchant-02",
+      "galleryImageId": "949e761d-3a92-45bc-8edb-0719147e03d3",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F63b960e9-4864-4fdf-8106-e22488e5faeb.mage",
+      "sourceLabel": "รูปสินค้า 02",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "blue-merchant-03",
+      "galleryImageId": "8f6a3c07-a048-425f-8524-9f606408452f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F13c4b2e4-35d0-4ef7-a5db-ee2e3a013034.mage",
+      "sourceLabel": "รูปสินค้า 03",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "กระโปรง",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-04",
+      "galleryImageId": "58dab79f-48b3-487d-b5e6-15106ff39739",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F77dc766b-af41-4bcb-a26a-799f14593360.mage",
+      "sourceLabel": "รูปสินค้า 04",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "กระโปรง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-05",
+      "galleryImageId": "ac501866-26dd-465c-86b6-b66469b2fb4c",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F4ced7612-d160-4473-a140-9856672a1a60.mage",
+      "sourceLabel": "รูปสินค้า 05",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "กระโปรง",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-06",
+      "galleryImageId": "1aaba5e3-7179-4dae-8b6a-fd38923d6230",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8189ebad-134c-4e14-9d37-cd3fc6dfa2fd.mage",
+      "sourceLabel": "รูปสินค้า 06",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงสอบ",
+          "label": "เซตคอกลม · สอบ · p05",
+          "shortLabel": "เซตคอกลม · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-07",
+      "galleryImageId": "4835d65c-bb81-43f8-abdc-2d8ee9359967",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff52d22c6-3576-488e-b1f9-b22237fa6dd3.mage",
+      "sourceLabel": "รูปสินค้า 07",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอจีน+โปรงสอบ",
+          "label": "เซตคอจีน · สอบ · p05",
+          "shortLabel": "เซตคอจีน · สอบ · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงสอบ",
+          "label": "กระโปรงสอบ · p05",
+          "shortLabel": "กระโปรงสอบ · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-08",
+      "galleryImageId": "595bffad-b607-4f1c-9230-93c718c131e4",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fba28f13d-6f0d-423e-9863-636913a89d68.mage",
+      "sourceLabel": "รูปสินค้า 08",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงบาน",
+          "label": "เซตคอกลม · บาน · p05",
+          "shortLabel": "เซตคอกลม · บาน · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-09",
+      "galleryImageId": "293cbe98-de78-4f75-ac8c-86e15081284b",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fd1464be1-436f-42e8-9a95-b4bcb006a7ff.mage",
+      "sourceLabel": "รูปสินค้า 09",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอจีน+โปรงบาน",
+          "label": "เซตคอจีน · บาน · p05",
+          "shortLabel": "เซตคอจีน · บาน · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงบาน",
+          "label": "กระโปรงบาน · p05",
+          "shortLabel": "กระโปรงบาน · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-10",
+      "galleryImageId": "ec07a730-dbd4-4ab3-9070-e70deca6121f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F36c72932-e3fe-4eb4-a7cc-40af0f232092.mage",
+      "sourceLabel": "รูปสินค้า 10",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอกลม+โปรงยาว",
+          "label": "เซตคอกลม · ยาว · p05",
+          "shortLabel": "เซตคอกลม · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอกลม",
+          "label": "เสื้อคอกลม · p05",
+          "shortLabel": "เสื้อคอกลม · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-11",
+      "galleryImageId": "0791bbac-cd81-40b1-b18e-e8b4cb32a696",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fee4e6cd4-2e5c-4ae0-86d6-7462228cc897.mage",
+      "sourceLabel": "รูปสินค้า 11",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "รวมฟ้า · p05",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "p05",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "p05-blue-คอจีน+โปรงยาว",
+          "label": "เซตคอจีน · ยาว · p05",
+          "shortLabel": "เซตคอจีน · ยาว · p05"
+        },
+        {
+          "code": "p05-blue-คอจีน",
+          "label": "เสื้อคอจีน · p05",
+          "shortLabel": "เสื้อคอจีน · p05"
+        },
+        {
+          "code": "p05-blue-โปรงยาว",
+          "label": "กระโปรงยาว · p05",
+          "shortLabel": "กระโปรงยาว · p05"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-12",
+      "galleryImageId": "4b03c6a2-088f-40b2-b71b-f4f6225f2ffc",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fc9e06a70-7510-4338-bfb4-1f2dde798325.mage",
+      "sourceLabel": "รูปสินค้า 12",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "กระโปรง",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-13",
+      "galleryImageId": "d14cdba0-4ef9-4545-b99e-7da9a4c0e63f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa6dc0a9a-93be-4f3a-9008-9690ff9714bb.mage",
+      "sourceLabel": "รูปสินค้า 13",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "กระโปรง",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-14",
+      "galleryImageId": "c3ea5bfe-4a79-442b-8e57-549de0c10dc1",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F934743a7-b39d-426e-8a21-7d7a59731f7a.mage",
+      "sourceLabel": "รูปสินค้า 14",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "กระโปรง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-15",
+      "galleryImageId": "a3fff724-4d66-40df-9d6c-139cfdacf28d",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F62b2c6ce-d5be-4572-9cde-feb0a457c513.mage",
+      "sourceLabel": "รูปสินค้า 15",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "blue-merchant-16",
+      "galleryImageId": "6c4825df-8d67-4b00-bc8e-9aa813a176b0",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F512f302c-efbb-4d46-8935-e6036b41b1d8.mage",
+      "sourceLabel": "รูปสินค้า 16",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-17",
+      "galleryImageId": "8338a538-1fbc-490e-9417-cf595e7927c9",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8a59146a-0a39-45c5-ac39-1388014455ed.mage",
+      "sourceLabel": "รูปสินค้า 17",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-18",
+      "galleryImageId": "516b9f89-d3c5-4672-9f27-942d0289e020",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fcbae99bc-321a-440b-9b42-dd2b5b118b98.mage",
+      "sourceLabel": "รูปสินค้า 18",
+      "category": "merchant",
+      "width": 600,
+      "height": 600,
+      "title": "รวมฟ้า · ps06",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-19",
+      "galleryImageId": "ddf813c9-5c28-454d-8ce2-113639864396",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2a77d61f-13b1-466d-b102-f52ff13c0593.mage",
+      "sourceLabel": "รูปสินค้า 19",
+      "category": "merchant",
+      "width": 900,
+      "height": 900,
+      "title": "รวมฟ้า · ps06 · รวมแบบ",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps06",
+        "สีฟ้าคราม",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps06-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps06",
+          "shortLabel": "เซตสอบ · ps06"
+        },
+        {
+          "code": "ps06-เสื้อ-ฟ้าคราม",
+          "label": "เสื้อ · ps06",
+          "shortLabel": "เสื้อ · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงสอบ-ฟ้าคราม",
+          "label": "กระโปรงสอบ · ps06",
+          "shortLabel": "กระโปรงสอบ · ps06"
+        },
+        {
+          "code": "ps06-setยาว-ฟ้า",
+          "label": "เซตยาว · ps06",
+          "shortLabel": "เซตยาว · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps06",
+          "shortLabel": "กระโปรงยาว · ps06"
+        },
+        {
+          "code": "ps06-setบาน-ฟ้า",
+          "label": "เซตบาน · ps06",
+          "shortLabel": "เซตบาน · ps06"
+        },
+        {
+          "code": "ps06-กระโปรงบาน-ฟ้าคราม",
+          "label": "กระโปรงบาน · ps06",
+          "shortLabel": "กระโปรงบาน · ps06"
+        }
+      ],
+      "note": "รูปข้อมูลร่วมของรุ่น · เลือกรหัสสีฟ้าและแบบที่ต้องการ"
+    },
+    {
+      "id": "blue-merchant-20",
+      "galleryImageId": "10168255-b1a6-4916-8db0-b60666a5da72",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F15e4cb3c-d50f-4def-bc79-6f3f58bcdf7f.mage",
+      "sourceLabel": "รูปสินค้า 20",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัดในรูป"
+    },
+    {
+      "id": "blue-merchant-21",
+      "galleryImageId": "aed13cc8-d841-4a76-a2bd-d8257ebd7c42",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F35e46f06-45f2-4852-8267-72eac569dbe2.mage",
+      "sourceLabel": "รูปสินค้า 21",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "กระโปรง",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-22",
+      "galleryImageId": "b9f28569-bc77-4340-9e63-93396e47cbc6",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8aaafea8-f710-4670-af88-3a6418ae7205.mage",
+      "sourceLabel": "รูปสินค้า 22",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "กระโปรง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-23",
+      "galleryImageId": "4cf2ad75-c73b-4509-86d6-ffade795e469",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb7b9ef26-31ab-49b8-831a-604a6c6b4ade.mage",
+      "sourceLabel": "รูปสินค้า 23",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ · ps07",
+          "shortLabel": "เซตสอบ · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ · ps07",
+          "shortLabel": "กระโปรงสอบ · ps07"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-24",
+      "galleryImageId": "348bdbbe-73f4-49cb-a0f0-1f659a4b8ae7",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F40c02130-92fe-461c-9a27-acd069b75040.mage",
+      "sourceLabel": "รูปสินค้า 24",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "กระโปรง",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-25",
+      "galleryImageId": "84ed53ac-f8f5-4fa1-80ed-e74c0e402f11",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2c2e9be9-1dd7-478b-b87b-8d2e68e863c0.mage",
+      "sourceLabel": "รูปสินค้า 25",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน · ps07",
+          "shortLabel": "เซตบาน · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน · ps07",
+          "shortLabel": "กระโปรงบาน · ps07"
+        }
+      ]
+    },
+    {
+      "id": "blue-merchant-26",
+      "galleryImageId": "60f9be52-8ebd-4e58-a669-c730b3b32005",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F69e7c2ce-2c79-4d3e-8d41-575808aae71c.mage",
+      "sourceLabel": "รูปสินค้า 26",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "รวมฟ้า · ps07",
+      "tags": [
+        "รวมฟ้า",
+        "สีฟ้า",
+        "ps07",
+        "เสื้อ",
+        "กระโปรง",
+        "เซต",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว · ps07",
+          "shortLabel": "เซตยาว · ps07"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ · ps07",
+          "shortLabel": "เสื้อ · ps07"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว · ps07",
+          "shortLabel": "กระโปรงยาว · ps07"
+        }
+      ]
     }
   ]
 }

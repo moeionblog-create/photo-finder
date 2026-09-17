@@ -6846,6 +6846,810 @@
           "shortLabel": "ผ้าถุงสำเร็จ"
         }
       ]
+    },
+    {
+      "id": "khid01-official-01",
+      "galleryImageId": "5306458f-93a4-4b33-a322-78174261f290",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2491bb6f-90ae-4adb-ba6d-517fbae90ebd.mage",
+      "sourceLabel": "รูปทางการ 01",
+      "category": "official",
+      "width": 1100,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · รวมแบบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-official-02",
+      "galleryImageId": "85d1ecd6-9b22-4d9a-a210-9e1865ec98c3",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2497329a-bdba-4b86-b974-fa795c30ddd3.mage",
+      "sourceLabel": "รูปทางการ 02",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · ตารางไซส์",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ผ้าถุงป้ายยาว",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ],
+      "note": "ข้อมูลร่วมกลุ่ม ps01 ลายขิดน้ำเงิน · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "khid01-official-03",
+      "galleryImageId": "442f1636-7f09-4cb6-824d-732038e75bf5",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F0855987b-7eaf-4e4e-b9b5-80cf1110aeaa.mage",
+      "sourceLabel": "รูปทางการ 03",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เนื้อผ้า",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ผ้าถุงป้ายยาว",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ],
+      "note": "ข้อมูลร่วมกลุ่ม ps01 ลายขิดน้ำเงิน · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "khid01-official-04",
+      "galleryImageId": "8a437b01-36a2-4a79-ad00-b307b48df680",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F475d3c0c-7c90-4e12-a1e4-c693a0b86195.mage",
+      "sourceLabel": "รูปทางการ 04",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อสีพื้นกับผ้าถุงป้าย",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อสีน้ำเงินล้วน",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "p99-น้ำเงิน",
+          "label": "เสื้อสีน้ำเงินล้วน",
+          "shortLabel": "เสื้อสีน้ำเงินล้วน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อสีพื้นและผ้าถุงป้ายของผู้หญิง · ยังไม่ยืนยันรหัสเสื้อผู้ชายในภาพ"
+    },
+    {
+      "id": "khid01-official-05",
+      "galleryImageId": "39be074a-f397-48f8-8fa1-94339ee86f95",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa7525fb9-47d3-4cb5-aa6f-638cf6882bef.mage",
+      "sourceLabel": "รูปทางการ 05",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตกระโปรงบาน",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงบาน",
+        "เสื้อลายขิด",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "khid01-official-06",
+      "galleryImageId": "bfeaed7c-7e62-4b02-a810-831bc9e0d339",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F88046284-2e35-4144-9407-84b08580a61c.mage",
+      "sourceLabel": "รูปทางการ 06",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตกระโปรงบาน",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงบาน",
+        "เสื้อลายขิด",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "khid01-official-07",
+      "galleryImageId": "848188ee-b630-4cb1-93e7-e28f819759ca",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F432b0ede-16f6-4be5-9a7f-d03a76594f8c.mage",
+      "sourceLabel": "รูปทางการ 07",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อลายขิด",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อลายขิด"
+      ],
+      "products": [
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัด ไม่ระบุทรงกระโปรงจากภาพที่ตัดช่วงล่างหรือท่านั่ง"
+    },
+    {
+      "id": "khid01-official-08",
+      "galleryImageId": "a37811b8-5644-4381-ab77-9588f61f2ebb",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F6c382370-bb0f-4ade-96cd-968bdc19cfc4.mage",
+      "sourceLabel": "รูปทางการ 08",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตกระโปรงสอบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "khid01-official-09",
+      "galleryImageId": "701c51aa-bc9d-478b-8c0f-46ac7ea52aeb",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa7e84776-45fc-49b4-882e-60d572c85860.mage",
+      "sourceLabel": "รูปทางการ 09",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อลายขิด",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อลายขิด"
+      ],
+      "products": [
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัด ไม่ระบุทรงกระโปรงจากภาพที่ตัดช่วงล่างหรือท่านั่ง"
+    },
+    {
+      "id": "khid01-official-10",
+      "galleryImageId": "c0bdfda6-9bcf-4325-a3d3-cafafde8a9e9",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F88cfbded-9c93-4452-993e-93370693f1eb.mage",
+      "sourceLabel": "รูปทางการ 10",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อลายขิด",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อลายขิด"
+      ],
+      "products": [
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัด ไม่ระบุทรงกระโปรงจากภาพที่ตัดช่วงล่างหรือท่านั่ง"
+    },
+    {
+      "id": "khid01-official-11",
+      "galleryImageId": "f9c7041e-8ff7-42e8-812b-be81f15434b7",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff3091135-9cf9-442a-83f9-4494996e6a6e.mage",
+      "sourceLabel": "รูปทางการ 11",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อสีพื้นกับผ้าถุงป้าย",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อสีน้ำเงินล้วน",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "p99-น้ำเงิน",
+          "label": "เสื้อสีน้ำเงินล้วน",
+          "shortLabel": "เสื้อสีน้ำเงินล้วน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-01",
+      "galleryImageId": "bc8f8659-fb51-4db8-aa8c-ab450a4525f8",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F1391907e-79a3-4304-9959-307636e00ef2.mage",
+      "sourceLabel": "รูปสินค้า 01",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · กระโปรงสอบและผ้าถุงป้าย",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-02",
+      "galleryImageId": "8c246a6c-6ae8-4410-9d23-f918f4ce2729",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F1ee82f12-c963-4115-862e-6949f9c16915.mage",
+      "sourceLabel": "รูปสินค้า 02",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · กระโปรงบาน",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-03",
+      "galleryImageId": "700e2dc6-23bc-4f28-8e64-3e120c40e6a1",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8a4cbcac-ddb9-432e-9756-b22eaaf37304.mage",
+      "sourceLabel": "รูปสินค้า 03",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตกระโปรงบาน",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงบาน",
+        "เสื้อลายขิด",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-04",
+      "galleryImageId": "b29fd110-6b20-48df-9fee-443dcfa152c7",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F50da58d1-54b3-48ed-a312-bf22890118af.mage",
+      "sourceLabel": "รูปสินค้า 04",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · รวมแบบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-05",
+      "galleryImageId": "763fb9fb-a274-4e7d-a35a-8d1f6e215017",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F186ca522-9b00-4e70-b9d6-f47bf4e4c06e.mage",
+      "sourceLabel": "รูปสินค้า 05",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · รวมแบบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-setบาน-น้ำเงิน",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-06",
+      "galleryImageId": "acb890ca-c99d-4ed9-b4d0-87ab8d24f8c4",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F54651904-f57a-40c2-834e-68c501ae9ae5.mage",
+      "sourceLabel": "รูปสินค้า 06",
+      "category": "merchant",
+      "width": 737,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · กระโปรงบาน",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps01-กระโปรงบาน-น้ำเงิน",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-07",
+      "galleryImageId": "2231249f-cd9f-4213-8cab-283504c8d1ce",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F999ad5d9-bddc-4062-83b5-ce91e166600c.mage",
+      "sourceLabel": "รูปสินค้า 07",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตกระโปรงสอบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตกระโปรงสอบ",
+        "เสื้อลายขิด",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps01-setสอบ-น้ำเงิน",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-08",
+      "galleryImageId": "9b00c47b-f60c-414b-bd04-77672b638d1a",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F568a7ea7-6128-4911-97f3-efd8f24eed15.mage",
+      "sourceLabel": "รูปสินค้า 08",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตผ้าถุงป้าย",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เซตผ้าถุงป้าย",
+        "เสื้อลายขิด",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-09",
+      "galleryImageId": "902aaa8d-09d8-42e1-848b-bc96ffe0af55",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F704369be-81dc-49f0-bd06-d3f4d614080a.mage",
+      "sourceLabel": "รูปสินค้า 09",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เสื้อลายขิด",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อลายขิด"
+      ],
+      "products": [
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-10",
+      "galleryImageId": "e1855fae-1602-42eb-a859-3d4b1b459c44",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2e04ceae-bd20-4548-877d-7456631d0ca9.mage",
+      "sourceLabel": "รูปสินค้า 10",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · กระโปรงสอบ",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps01-กระโปรงสอบ-น้ำเงิน",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "khid01-merchant-11",
+      "galleryImageId": "f0917fe5-f934-4b2e-946c-302f729e27b2",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fd7eb8129-ac16-4981-ba8b-ac89b8e74159.mage",
+      "sourceLabel": "รูปสินค้า 11",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · ผ้าถุงป้ายยาว",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "ผ้าถุงป้ายยาว"
+      ],
+      "products": [
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
     }
   ]
 }

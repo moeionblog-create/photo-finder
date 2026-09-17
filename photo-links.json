@@ -7650,6 +7650,481 @@
           "shortLabel": "ผ้าถุงป้ายยาว"
         }
       ]
+    },
+    {
+      "id": "yellow08-official-01",
+      "galleryImageId": "a1e471de-f825-452b-a9cc-ad8a1f2a7820",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff0293696-891e-4498-a37a-4f764f6608b3.mage",
+      "sourceLabel": "รูปทางการ 01",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เซตกระโปรงสอบ",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-official-02",
+      "galleryImageId": "f1a0e69d-0e4c-4358-8a7d-d72667f7d315",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb2d9160c-aa22-4e29-b45f-32c8935a1fe6.mage",
+      "sourceLabel": "รูปทางการ 02",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เซตกระโปรงบาน",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-official-03",
+      "galleryImageId": "3153769f-ed10-4a08-b974-e1f1a73524bc",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F1dc9a3e7-6883-4c8e-9da7-15dd00456624.mage",
+      "sourceLabel": "รูปทางการ 03",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · รวมแบบ",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-official-04",
+      "galleryImageId": "1a0d0c69-4a7d-4cc6-bb8f-513cc32add2c",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fcb26dedc-049a-4647-ba86-4d5421592ae7.mage",
+      "sourceLabel": "รูปทางการ 04",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เซตกระโปรงบาน",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-official-05",
+      "galleryImageId": "069f5d1a-e1fe-453b-a971-149e558b5b41",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F74691bbe-7418-494f-9ff9-69758fd76fcf.mage",
+      "sourceLabel": "รูปทางการ 05",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · รวมแบบ",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-official-06",
+      "galleryImageId": "cd37fe0b-8bb8-4b56-bc1a-01af82a60414",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F93a6d450-d5f1-418f-95ac-2f2ac92f3896.mage",
+      "sourceLabel": "รูปทางการ 06",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · ตารางไซส์",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมกลุ่ม ps08 สีเหลือง · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "yellow08-official-07",
+      "galleryImageId": "d093c078-7a6a-4ea1-9ee8-07760a478cac",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F781d4143-3520-4db4-a580-b32a5aecaf59.mage",
+      "sourceLabel": "รูปทางการ 07",
+      "category": "official",
+      "width": 825,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เนื้อผ้า",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมกลุ่ม ps08 สีเหลือง · เลือกรหัสสินค้าที่ต้องการ"
+    },
+    {
+      "id": "yellow08-merchant-01",
+      "galleryImageId": "60f4e016-e79d-4e39-89eb-7c29f59109e6",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fd818564a-0bcb-4cab-8e65-faf80ebab2ee.mage",
+      "sourceLabel": "รูปสินค้า 01",
+      "category": "merchant",
+      "width": 1100,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เสื้อเหลือง",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เสื้อเหลือง"
+      ],
+      "products": [
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-merchant-02",
+      "galleryImageId": "784866d6-48e5-4a5a-a2d7-20dd04314bd0",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fcbc82f14-2632-4317-9d54-e2a384f6e6a7.mage",
+      "sourceLabel": "รูปสินค้า 02",
+      "category": "merchant",
+      "width": 960,
+      "height": 960,
+      "title": "ชุดเหลือง ps08 · เซตกระโปรงบาน",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-merchant-03",
+      "galleryImageId": "b0c1b580-5fea-4dd6-9099-0d7f57506b9f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fc96918d6-ba3a-498b-8f26-e43156745ef8.mage",
+      "sourceLabel": "รูปสินค้า 03",
+      "category": "merchant",
+      "width": 960,
+      "height": 960,
+      "title": "ชุดเหลือง ps08 · เซตกระโปรงสอบ",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-merchant-04",
+      "galleryImageId": "fcfc1efb-2e95-45b9-b024-acfb47f80bf2",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8fa50b4e-c139-48ff-a5a2-6f67435b9f14.mage",
+      "sourceLabel": "รูปสินค้า 04",
+      "category": "merchant",
+      "width": 1100,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · กระโปรงบาน",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-merchant-05",
+      "galleryImageId": "5682897f-77e0-4cae-b387-ce4bd360daaf",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F721ca815-fff7-4186-b1ed-e5fe61b497a8.mage",
+      "sourceLabel": "รูปสินค้า 05",
+      "category": "merchant",
+      "width": 1100,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · กระโปรงสอบ",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "yellow08-merchant-06",
+      "galleryImageId": "3c9b025a-a024-46a7-bd0f-1ab9d4471034",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F0db127f3-2828-449f-82d5-7153f1b84391.mage",
+      "sourceLabel": "รูปสินค้า 06",
+      "category": "merchant",
+      "width": 825,
+      "height": 1100,
+      "title": "ชุดเหลือง ps08 · เนื้อผ้า",
+      "tags": [
+        "สีเหลือง",
+        "ps08",
+        "เซตกระโปรงสอบ",
+        "เซตกระโปรงบาน",
+        "เสื้อเหลือง",
+        "กระโปรงสอบ",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps08-setสอบ-เหลือง",
+          "label": "เซตกระโปรงสอบ",
+          "shortLabel": "เซตกระโปรงสอบ"
+        },
+        {
+          "code": "ps08-setบาน-เหลือง",
+          "label": "เซตกระโปรงบาน",
+          "shortLabel": "เซตกระโปรงบาน"
+        },
+        {
+          "code": "ps08-เสื้อ-เหลือง",
+          "label": "เสื้อเหลือง",
+          "shortLabel": "เสื้อเหลือง"
+        },
+        {
+          "code": "ps08-กระโปรงสอบ-เหลือง",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps08-กระโปรงบาน-เหลือง",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมกลุ่ม ps08 สีเหลือง · เลือกรหัสสินค้าที่ต้องการ"
     }
   ]
 }

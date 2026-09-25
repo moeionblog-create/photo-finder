@@ -9860,6 +9860,674 @@
           "shortLabel": "กระโปรงบาน · ม่วง"
         }
       ]
+    },
+    {
+      "id": "ps07-sep26-official-01",
+      "galleryImageId": "d5d2c53a-47a2-42da-aa83-706d7cb51c33",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F7949cdf4-6e1b-426e-904f-2bbc70e4d742.mage",
+      "sourceLabel": "รูปทางการ 01",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เสื้อ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัด เพราะภาพไม่เห็นความยาวกระโปรงครบ"
+    },
+    {
+      "id": "ps07-sep26-official-02",
+      "galleryImageId": "24bf6d51-934c-410b-a80f-db4be16c5d2b",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F7bf93a39-4293-4d97-92c3-c031b04e821b.mage",
+      "sourceLabel": "รูปทางการ 02",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · ตารางไซส์",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เซตยาว",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "ตารางไซส์",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมรุ่น ps07 สีฟ้า · เลือกแบบที่ต้องการ"
+    },
+    {
+      "id": "ps07-sep26-official-03",
+      "galleryImageId": "d735deff-67f2-4d6a-8799-9e6d2e852679",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fe6243c06-c0bf-459d-84bb-13e5e1db84db.mage",
+      "sourceLabel": "รูปทางการ 03",
+      "category": "official",
+      "width": 737,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงสอบ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เสื้อ",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-official-04",
+      "galleryImageId": "b7838e52-0cce-4ab2-9b38-6684cfc83c77",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2faaa7c8-7bd5-43a6-b0da-7bc102bc994c.mage",
+      "sourceLabel": "รูปทางการ 04",
+      "category": "official",
+      "width": 737,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงยาว",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตยาว",
+        "เสื้อ",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-official-05",
+      "galleryImageId": "51d120dd-d7aa-4333-9c55-f32a343dca0f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F532c049f-7d0f-4b5e-bfb2-5198f1235dca.mage",
+      "sourceLabel": "รูปทางการ 05",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เสื้อ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        }
+      ],
+      "note": "ผูกเฉพาะเสื้อที่เห็นชัด เพราะภาพไม่เห็นความยาวกระโปรงครบ"
+    },
+    {
+      "id": "ps07-sep26-official-06",
+      "galleryImageId": "9bac95eb-d8aa-4d31-b0e6-46ae72947f86",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fa4a3e2db-d42f-4082-b643-ab24749a37a6.mage",
+      "sourceLabel": "รูปทางการ 06",
+      "category": "official",
+      "width": 737,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงบาน",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-official-07",
+      "galleryImageId": "9fd9584a-f90e-401c-86f8-fa2ddbb57782",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F8cf5fe01-6262-418a-8539-13160d9401f5.mage",
+      "sourceLabel": "รูปทางการ 07",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงบาน",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-official-08",
+      "galleryImageId": "da2a6de0-99b5-4d8b-bfb0-516e4cc45512",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F615e75d2-5bb9-4894-b96a-6c643957e371.mage",
+      "sourceLabel": "รูปทางการ 08",
+      "category": "official",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงยาว",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตยาว",
+        "เสื้อ",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-official-09",
+      "galleryImageId": "4312b2dc-86f0-4b07-b0f0-ba38d96c35f6",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb925484d-0f6d-4589-8bf6-48d1e040c772.mage",
+      "sourceLabel": "รูปทางการ 09",
+      "category": "official",
+      "width": 506,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เนื้อผ้า",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เซตยาว",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "เนื้อผ้า",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมรุ่น ps07 สีฟ้า · เลือกแบบที่ต้องการ"
+    },
+    {
+      "id": "ps07-sep26-official-10",
+      "galleryImageId": "6a3c9485-11f4-43bf-8673-1add272b19c7",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fd8c5da9f-827a-4e18-8319-fae68e0d3cae.mage",
+      "sourceLabel": "รูปทางการ 10",
+      "category": "official",
+      "width": 600,
+      "height": 900,
+      "title": "ps07 สีฟ้าลายขอ · รวมแบบ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เซตยาว",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมรุ่น ps07 สีฟ้า · เลือกแบบที่ต้องการ"
+    },
+    {
+      "id": "ps07-sep26-merchant-01",
+      "galleryImageId": "8f004e10-ab68-420f-bc32-85ba493f45d5",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2733d37a-363c-49cf-962e-9b03727047ee.mage",
+      "sourceLabel": "รูปสินค้า 01",
+      "category": "merchant",
+      "width": 737,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เสื้อ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เสื้อ"
+      ],
+      "products": [
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-02",
+      "galleryImageId": "37a730b1-e909-44ef-ba48-945ebc183ca5",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fbc6f66f2-d26f-40d4-a844-4ea6ca483562.mage",
+      "sourceLabel": "รูปสินค้า 02",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · กระโปรงสอบ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-03",
+      "galleryImageId": "fa90b4b1-d8fb-4987-b7a7-10bcda49b82a",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb12903f0-0613-49fa-a009-8cba6bcbf394.mage",
+      "sourceLabel": "รูปสินค้า 03",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · กระโปรงบาน",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-04",
+      "galleryImageId": "cc65e8cd-82d8-49a2-9a97-7ec94e5f97ee",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F2b50d241-e48f-42ad-b8a0-cd4c8543f735.mage",
+      "sourceLabel": "รูปสินค้า 04",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · กระโปรงยาว",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-05",
+      "galleryImageId": "8e25841c-207b-452f-bb70-4ab3424ffbde",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fb4e7863c-a9a3-42b1-8568-8b20e67a9367.mage",
+      "sourceLabel": "รูปสินค้า 05",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงยาว",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตยาว",
+        "เสื้อ",
+        "กระโปรงยาว"
+      ],
+      "products": [
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-06",
+      "galleryImageId": "58d8d28c-7f37-4dce-8da2-04eb8d56a779",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F73ef0846-3d4c-47f2-8c52-5f714b3f6176.mage",
+      "sourceLabel": "รูปสินค้า 06",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงสอบ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เสื้อ",
+        "กระโปรงสอบ"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-07",
+      "galleryImageId": "dbc27ada-fbbc-4475-8f06-1a7eeeffefd3",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fab64c5c2-8327-45d5-af7c-e40d2486a105.mage",
+      "sourceLabel": "รูปสินค้า 07",
+      "category": "merchant",
+      "width": 824,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · เซตกระโปรงบาน",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงบาน"
+      ],
+      "products": [
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ]
+    },
+    {
+      "id": "ps07-sep26-merchant-08",
+      "galleryImageId": "b3497cf2-8d83-4349-9605-9220a95df798",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fc225c6cb-1d4d-40da-9ad1-2b2352a3617f.mage",
+      "sourceLabel": "รูปสินค้า 08",
+      "category": "merchant",
+      "width": 733,
+      "height": 1100,
+      "title": "ps07 สีฟ้าลายขอ · รวมแบบ",
+      "tags": [
+        "ps07",
+        "สีฟ้า",
+        "ลายขอ",
+        "เซตสอบ",
+        "เซตยาว",
+        "เซตบาน",
+        "เสื้อ",
+        "กระโปรงสอบ",
+        "กระโปรงยาว",
+        "กระโปรงบาน",
+        "รวมแบบ",
+        "ข้อมูลร่วม"
+      ],
+      "products": [
+        {
+          "code": "ps07-setสอบ-ฟ้า",
+          "label": "เซตสอบ",
+          "shortLabel": "เซตสอบ"
+        },
+        {
+          "code": "ps07-setยาว-ฟ้า",
+          "label": "เซตยาว",
+          "shortLabel": "เซตยาว"
+        },
+        {
+          "code": "ps07-setบาน-ฟ้า",
+          "label": "เซตบาน",
+          "shortLabel": "เซตบาน"
+        },
+        {
+          "code": "ps07-เสื้อ-ฟ้า",
+          "label": "เสื้อ",
+          "shortLabel": "เสื้อ"
+        },
+        {
+          "code": "ps07-กระโปรงสอบ-ฟ้า",
+          "label": "กระโปรงสอบ",
+          "shortLabel": "กระโปรงสอบ"
+        },
+        {
+          "code": "ps07-กระโปรงยาว-ฟ้า",
+          "label": "กระโปรงยาว",
+          "shortLabel": "กระโปรงยาว"
+        },
+        {
+          "code": "ps07-กระโปรงบาน-ฟ้า",
+          "label": "กระโปรงบาน",
+          "shortLabel": "กระโปรงบาน"
+        }
+      ],
+      "note": "ข้อมูลร่วมรุ่น ps07 สีฟ้า · เลือกแบบที่ต้องการ"
     }
   ]
 }

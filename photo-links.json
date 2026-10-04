@@ -12120,6 +12120,82 @@
           "shortLabel": "กระโปรงสอบ · ฟ้า"
         }
       ]
+    },
+    {
+      "id": "khid01oct05-8616761a-36e5-40d6-9a6d-0e63ff77d617",
+      "galleryImageId": "8616761a-36e5-40d6-9a6d-0e63ff77d617",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F0d2c74c4-04e8-48c6-a20f-ecd7a497ce6f.mage",
+      "sourceLabel": "รูปทางการ 12",
+      "category": "official",
+      "width": 880,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตผ้าถุงป้ายยาว",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อ",
+        "คอจีน",
+        "กระโปรง",
+        "กระโปรงยาว",
+        "ผ้าถุงป้าย",
+        "เซต"
+      ],
+      "products": [
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
+    },
+    {
+      "id": "khid01oct05-e53e199e-de0f-4bda-8d03-f15e25d4e05f",
+      "galleryImageId": "e53e199e-de0f-4bda-8d03-f15e25d4e05f",
+      "file": "https://photo-finder-media.moeionblog.workers.dev/images/products%2F3f17362f-f1df-4f8f-86c3-13054fcbcf1d.mage",
+      "sourceLabel": "รูปทางการ 13",
+      "category": "official",
+      "width": 880,
+      "height": 1100,
+      "title": "ลายขิดน้ำเงิน · เซตผ้าถุงป้ายยาว",
+      "tags": [
+        "ลายขิด",
+        "สีน้ำเงิน",
+        "ps01",
+        "เสื้อ",
+        "คอจีน",
+        "กระโปรง",
+        "กระโปรงยาว",
+        "ผ้าถุงป้าย",
+        "เซต"
+      ],
+      "products": [
+        {
+          "code": "ps01-setผ้าถุงป้าย-น้ำเงิน",
+          "label": "เซตผ้าถุงป้าย",
+          "shortLabel": "เซตผ้าถุงป้าย"
+        },
+        {
+          "code": "ps01-เสื้อ-น้ำเงิน",
+          "label": "เสื้อลายขิด",
+          "shortLabel": "เสื้อลายขิด"
+        },
+        {
+          "code": "ps01-ผ้าถุงป้าย-น้ำเงิน",
+          "label": "ผ้าถุงป้ายยาว",
+          "shortLabel": "ผ้าถุงป้ายยาว"
+        }
+      ]
     }
   ]
 }

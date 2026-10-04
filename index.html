@@ -87,6 +87,7 @@
   .img-tile.dragging{ opacity:0.4; }
   .img-tile.drag-over{ outline:2px dashed var(--teal); outline-offset:-2px; }
   .img-tile img{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; cursor:zoom-in; }
+  .img-tile img.size-chart{ object-fit:contain; background:#fff; }
   .sku-field-row{ display:flex; gap:6px; padding:8px 8px 0; }
   .sku-field-row input{ font-size:12.5px; padding:7px 9px; }
   .sku-field-row button{ font-size:11px; font-weight:600; padding:0 10px; border-radius:7px; border:none; cursor:pointer; background:var(--paper-2); color:var(--teal-dark); white-space:nowrap; }
@@ -148,6 +149,7 @@
 </div>
 <div id="toast" class="toast"></div>
 
+<script src="size-charts.js?v=20261005"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (function(){
@@ -423,7 +425,7 @@
     homeContent.innerHTML = `<div class="grid">` + filtered.map(p=>`
       <div class="card" data-id="${esc(p.id)}">
         <div class="card-thumb">
-          ${p.cover ? `<img src="${p.cover}" loading="lazy" />` : 'ยังไม่มีรูป'}
+          ${p.cover ? `<img src="${window.galleryImageRevisions?.cover(p.cover) || p.cover}" loading="lazy" />` : 'ยังไม่มีรูป'}
           <span class="count-badge">${(p.totalCount||0)} รูป</span>
         </div>
         <div class="card-body">
@@ -643,6 +645,14 @@
   let selectMode = false;
   let selectedIdxs = new Set();
 
+  // Resolve the current published chart for every user-facing image action.
+  // Keep raw records intact so reordering/editing does not overwrite cloud media.
+  function displayImageUrl(image){ return window.galleryImageRevisions?.url(image) || image.dataUrl; }
+  function imageDownloadName(image, i){
+    const extension = window.galleryImageRevisions?.isChart(image) ? '.png' : '.jpg';
+    return (currentFull.sku||currentFull.id) + '_' + activeTab + '_' + (i+1) + extension;
+  }
+
   function renderTabBody(){
     const body = document.getElementById('tab-body');
     const imgs = currentFull.categories[activeTab] || [];
@@ -661,7 +671,7 @@
       <div class="img-tile" draggable="${selectMode ? 'false' : 'true'}" data-tile-idx="${i}">
         <div class="img-thumb-wrap">
           ${selectMode ? `<label class="sel-checkbox"><input type="checkbox" data-sel="${i}" ${selectedIdxs.has(i)?'checked':''}/></label>` : ''}
-          <img src="${im.dataUrl}" data-idx="${i}" data-image-id="${esc(im.id)}"/>
+          <img src="${displayImageUrl(im)}" class="${window.galleryImageRevisions?.isChart(im) ? 'size-chart' : ''}" data-idx="${i}" data-image-id="${esc(im.id)}"/>
         </div>
         ${isMerchant ? `
         <div class="sku-field-row">
@@ -731,7 +741,7 @@
           toast(`กำลังดาวน์โหลด ${chosen.length} รูป...`);
           for(let k=0;k<chosen.length;k++){
             const i = chosen[k];
-            downloadDataUrl(imgs[i].dataUrl, (currentFull.sku||currentFull.id) + '_' + activeTab + '_' + (i+1) + '.jpg');
+            downloadDataUrl(displayImageUrl(imgs[i]), imageDownloadName(imgs[i], i));
             await new Promise(res=>setTimeout(res, 350));
           }
           toast('โหลดครบแล้ว ลากไฟล์จากโฟลเดอร์ดาวน์โหลดไปวางในแชทได้เลยค่ะ');
@@ -763,12 +773,12 @@
       });
     }
     body.querySelectorAll('[data-copy]').forEach(btn=>{
-      btn.addEventListener('click', ()=>copyImageToClipboard(imgs[Number(btn.dataset.copy)].dataUrl));
+      btn.addEventListener('click', ()=>copyImageToClipboard(displayImageUrl(imgs[Number(btn.dataset.copy)])));
     });
     body.querySelectorAll('[data-dl]').forEach(btn=>{
       btn.addEventListener('click', ()=>{
         const i = Number(btn.dataset.dl);
-        downloadDataUrl(imgs[i].dataUrl, (currentFull.sku||currentFull.id) + '_' + activeTab + '_' + (i+1) + '.jpg');
+        downloadDataUrl(displayImageUrl(imgs[i]), imageDownloadName(imgs[i], i));
       });
     });
     body.querySelectorAll('[data-rm]').forEach(btn=>{

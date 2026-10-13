@@ -3,6 +3,11 @@
 (() => {
   const revisions = [
   {
+    "imageId": "188729a1-e7df-4a28-a2a4-e0b0f7478e14",
+    "originalUrl": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff2567a00-4602-4dc3-b29d-64216789634e.mage",
+    "file": "size-galant-20261013.png"
+  },
+  {
     "imageId": "8f125673-94f7-49ea-89f1-82c6b65d06e5",
     "originalUrl": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Fec8b3ef4-bc9c-434e-b938-18fd93bf592f.mage",
     "file": "size-02-20261005.png"

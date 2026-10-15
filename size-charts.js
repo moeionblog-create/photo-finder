@@ -2,6 +2,11 @@
 // guard against replacing a future upload. Cloud originals remain recoverable.
 (() => {
   const revisions = [
+{
+  "imageId": "42586809-961f-4b88-a134-f531d886da9b",
+  "originalUrl": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Feb46b79c-f528-4f00-90a8-893e4f7f6644.mage",
+  "file": "size-silk-20261016.png"
+},
   {
     "imageId": "188729a1-e7df-4a28-a2a4-e0b0f7478e14",
     "originalUrl": "https://photo-finder-media.moeionblog.workers.dev/images/products%2Ff2567a00-4602-4dc3-b29d-64216789634e.mage",
